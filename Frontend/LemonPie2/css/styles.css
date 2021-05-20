@@ -1,0 +1,80 @@
+@font-face {
+  src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+  font-family: 'Inter';  
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+
+nav ul a {
+  color: #333;
+  text-decoration: none;
+}
+
+section.fondo-img {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ), url("../img/lemon-pie.png");
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  height: 400px;
+  margin-bottom: 20px;
+  text-align: bottom;
+  vertical-align: text-bottom;
+  width: 100%;
+
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+  font-weight:900, bolder;
+  font-family: 'Inter', sans-serif;
+  padding-top: 240px;
+}
+
+.fondo-img p {
+  color: white;
+  font-size: 20px;
+}
+h2,
+h3,
+ul,
+ol {
+  color: rgb(64, 62, 62);
+}
+
+h2 {
+  color: rgb(31, 29, 29);
+  display:inline;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+h3 {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+span {
+  color: orange;
+  text-decoration: underline;
+}
+
+ul, ol {
+   font-weight:500;
+}
+
+.fas{
+ display:inline;
+ font-size: 20px;
+}
+

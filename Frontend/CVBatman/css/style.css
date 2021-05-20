@@ -1,0 +1,90 @@
+/* 
+Fuente:  Calibri, Arial, Helvetica, sans-serif
+Header fondo: #dddddd
+h1, h2 fondo: #BFBFBF
+h2 tamaño fuente: 18px
+footer color: #1F497D
+Footer tamaño fuente: 24px */
+
+
+/* --------------------------------------HEADER--------------------------------------- */
+
+header {
+    text-align: center;
+    background-color: #dddddd;
+}
+
+h1 {
+    background-color: #BFBFBF;
+    color: rgb(45, 70, 111);
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    vertical-align: middle;
+    padding: 10px;
+    word-spacing: 40px;
+    font-size: 28px;
+    letter-spacing: 10px;
+}
+
+
+/* ---------------------------------MAIN------------------------------------------ */
+
+main {
+    padding-inline-start: 28.5%;
+    padding-inline-end: 28.5%;
+    padding-top: 1%;
+}
+
+h2 {
+    background-color: #BFBFBF;
+    color: rgb(97, 37, 45);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 10px;
+}
+
+#FormacionAcademica {
+    padding-top: 5px;
+}
+
+#ExperienciaLaboral {
+    padding-top: 5px;
+    padding-bottom: 30PX;
+}
+
+section ul {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-variant: small-caps;
+}
+
+section dl {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.dato {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* --------------------------FOOTER--------------------------------------------- */
+
+footer {
+    text-align: center;
+    background-color: #1F497D;
+    color: white;
+    font-size: 24px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 360;
+    /* padding: 1%; */
+}
+
+footer span {
+    vertical-align: text-bottom;
+}
+
+footer img {
+    height: 18px;
+    width: 18px;
+}

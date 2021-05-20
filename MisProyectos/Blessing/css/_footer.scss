@@ -1,0 +1,15 @@
+.pie {
+    display: flex;
+    justify-content: center;
+    background-color: $color-5;
+
+    a {
+        text-decoration: none;
+
+        img {
+            width: 2vw;
+            margin: 1vh;
+            
+        }
+    }
+} 

@@ -1,0 +1,400 @@
+main {
+    /* section {
+        border: 5px solid black;
+    } */
+
+    .logo {
+        display: flex;
+        justify-content: center;        
+
+        img {
+            padding: 8vh 1vw;
+            width: 16vw;
+        }
+    }
+
+    nav {      
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2.5rem;
+            color: $color-5;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .marca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .principal {
+            background-image: linear-gradient(
+                rgba(49, 35, 49, 0.4),
+                rgba(49, 35, 49, 0.45)
+              ), url('../img/pijamadasportada2.png');
+            background-color: rgba(0,0,0,0.6);
+            width: 85vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 12rem;
+                font-family: $dancing;
+                font-weight: 100;
+                color: $color-3;
+                padding-bottom: 35vh;
+
+                i {
+                    font-size: 8.5rem;
+                    margin: 0vw 2vw;
+                }
+            }
+        }
+
+        .secciones-marca {
+            display: flex;
+            justify-content: space-between;
+            width: 85vw;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            h3 {
+                font-family: $dancing;
+                font-weight: 100;
+                padding-bottom: 1vh;
+            }
+            
+            
+            .marca-pijamadas {
+                background-color: $color-6;
+                flex-grow: 1;
+                margin: 0.5vw 0.5vw 0.5vw 0vw;          
+            }
+
+            .marca-candies {
+                background-color: $color-5;
+                flex-grow: 1;
+                padding: 0vh 3vw;
+                margin: 0.5vw 0vw 0.5vw 0vw;
+            }
+
+            .marca-pets {
+                background-color: $color-7;
+                flex-grow: 1;
+                margin: 0.5vw 0vw 0.5vw 0.5vw;
+            }
+        }
+    }
+    
+    #nosotros {
+        width: 85vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;        
+        margin: auto;
+    
+    
+        .nosotros {
+            display: flex;
+            justify-content: center;           
+            
+        }
+        
+        .frase{
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            
+
+            h2 {
+                font-size: 5rem;
+                color: black;
+                text-align: right;
+                font-family: $amatic;
+                padding: 1vw;
+
+            }
+
+            span {
+                font-family: $dancing;
+                font-size: 7rem;
+                color: $color-6;
+            }
+        }
+
+        .vision {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            width: 50%;
+            padding: 2.7vw;
+            
+            p {
+                font-family: $grace;
+                font-size: 2.5rem;
+                
+            }
+
+            .boton-galeria {
+                background-color: $color-7;
+                font-size: 3rem;
+                text-align: center;
+                border-radius: 35px;
+                margin-top: 5vh;
+                transition: all 0.4s;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+                
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding: 5vh 3.5vw;
+                }
+
+            }
+        }
+
+    }
+
+    #productos {
+        width: 85vw;
+        display: flex;
+        justify-content: center;
+        margin: 20vh auto 0vh;
+    
+    
+        .productos {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-grow: 1;
+            padding: 10vh 0vw;
+            
+
+            h3 {
+                font-size: 3.5rem;
+            }
+
+            img {
+                width: 20vw;
+                padding-top: 1.5vh;
+                padding-bottom: 3.5vh;
+            }
+
+            p {
+                font-size: 2.2vw;
+                text-align: justify;
+                width: 20vw;
+                padding-top: 1.5vh;
+                padding-bottom: 3vh;
+            }
+
+            .Ble {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            
+
+                .imagen {
+                width: 20vw;
+                height: 25vh;
+                }
+
+                               
+                .Pij {
+                    background-image: url('../img/Pijamadas/pijamadas11.png');
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .C {
+                    background-image: url('../img/Candies/Candies4.png');
+                    background-position: center bottom;
+                    background-size: cover;
+                }
+
+                .Pets {
+                    background-image: url('../img/Pets/pets7.png');
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .boton {
+                @include boton($color-6,10vw);
+                
+                }
+            }
+
+
+        }    
+        
+    }
+
+    #clientes {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding-top: 15vh;
+        margin: auto;
+
+        .clientes, .experiencia {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .cara {
+                font-size: 10rem;
+                color: $color-7;
+            }
+
+            h4 {
+                font-size: 5rem;
+                color: black;
+                text-align: right;
+                font-family: $amatic;
+                padding: 1vw;
+            }
+            
+            p {
+                font-size: 3rem;
+                text-align: justify;
+                width: 25vw;
+                padding-top: 1.5vh;
+                padding-bottom: 3vh;
+            }
+
+            .comillas {
+                font-size: 3rem;
+            }
+
+            .imagenes-clientes {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                img {
+                    width: 5vw;
+                    margin: 2vw;
+                    border-radius: 50%;
+                }
+            }
+
+            
+
+        }
+
+        .experiencia {
+            background-image: url('../img/Pijamadas/pijamadas21.png');
+            background-position: center;
+            background-size: cover;
+            width: 29.5vw;
+
+            p {
+                font-size: 6rem;
+                color: white;
+                text-align: right;
+                font-family: $amatic;
+                padding: 1vw;
+                background-color: rgba(0,0,0,0.6);
+
+            span {
+                font-family: $dancing;
+                font-size: 7rem;
+                color: $color-6;
+                
+                
+                }
+            }
+        }       
+
+        
+    }
+
+    #contactanos {
+        padding-top: 0.5vh;
+    
+
+        .contactanos {
+            width: 48vw;
+            margin: 10vh auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-6;
+            color: white;
+            border-radius: 30px;
+            padding-top: 6vh;
+            
+
+            h4 {
+                font-size: 5.5rem;
+                font-weight: bold;
+                
+            }
+
+            .links-contacto {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            a {
+                font-size: 3.5rem;
+                color: white;
+                text-decoration: none;
+                padding: 2vh 2vw;
+
+                i {
+                    padding: 2vh 2vw;
+                }
+            }
+
+            img {
+                width: 15vw;
+                padding: 2vh 0vw;
+            }
+        }
+    }
+
+    /*
+    .boton-whatsapp {
+        position: fixed;
+        bottom: 10vh;
+        right: 5vw;
+        transition: all 0.4s;
+        border-radius: 50%;
+
+        img {
+            border-radius: 50%;
+            width: 6vw;
+        }
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    } */
+}

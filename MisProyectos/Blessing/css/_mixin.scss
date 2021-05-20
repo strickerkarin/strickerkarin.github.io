@@ -1,0 +1,15 @@
+@mixin boton($color,$ancho) {
+    background-color: $color;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 35px;
+    margin-top: 5vh;
+    color: white;
+    transition: all 0.4s;
+    width: $ancho;
+
+    &:hover {
+    transform: scale(1.3);
+    }
+
+}

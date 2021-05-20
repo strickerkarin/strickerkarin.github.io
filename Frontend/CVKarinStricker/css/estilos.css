@@ -1,0 +1,166 @@
+@font-face{src:url('../fonts/Bitter/Bitter-VariableFont_wght.ttf'); font-family:'Bitter'}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Londrina+Solid&display=swap');
+*{
+    box-sizing: border-box;
+    color:rgb(16, 48, 48);     
+    font-family: 'Anton', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:rgb(238, 230, 230);
+    text-align: center;          
+}
+
+
+header img{    
+    text-align: center; 
+    width: 150px;
+}
+
+div{
+    background-color:rgb(238, 230, 230);
+    position: sticky;
+    text-align: center; 
+    top: calc(-100% + 100px);
+}
+
+
+h1{
+    background-color:rgb(211, 145, 145);
+    color: white;
+    font-family: 'Bitter-Black';
+    font-size: 35px;
+    font-weight: 100px;     
+    letter-spacing: 10px;
+    padding: 10px;
+    vertical-align: middle;
+    word-spacing: 15px;
+}
+
+div nav{
+    color: white;          
+    padding: 20px 0px;
+    text-transform: uppercase;
+}
+
+div nav ul li {
+    background-color:rgb(45, 145, 145);
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px 5px;
+    padding: 5px 15px 5px 9px;
+    text-decoration:none;
+}
+
+div nav ul li a{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration:none;
+}
+
+.fas{
+    color: white;
+    display: inline-block;
+    padding-right: 6px;
+}
+
+main {
+    padding-inline-start: 28.5%;
+    padding-inline-end: 28.5%;
+    padding-top: 1%;
+    
+}
+
+h2{
+    background-color:rgb(211, 145, 145);
+    border-radius: 4px;
+    color:white;
+    font-family: 'Bitter-Black';
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 30px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 8px;
+}
+
+span{
+    font-weight: bold;
+    padding: 3px 7px;
+}
+
+h3{
+    padding: 15px 0px;
+}
+
+.DatosPers {
+    padding-inline-start: 8%;
+    padding-inline-end: 8%;
+    
+       
+}
+
+.DatosAc{
+    padding-inline-start: 8%;
+            
+}
+
+.DatosA{
+    padding-inline-start: 8%;
+    padding-inline-end: 8%;
+    
+    
+}
+
+.ConocTec{
+    padding-inline-start: 8%;
+    padding-inline-end: 8%;
+    
+    
+}
+
+.Cursos{
+    padding-inline-start: 8%;
+    padding-inline-end: 8%;
+    
+    
+}
+
+.ExperienciaLaboral{
+    padding-inline-start: 8%;
+    padding-inline-end: 4%;
+    text-align: justify;
+    
+}
+
+h4{
+    padding: 15px 0px;
+}
+
+.DescripcionExperiencia{
+    padding-inline-start: 2%;
+    padding-inline-end: 4%;
+    text-align: justify;
+}
+
+footer{
+    background-color: rgb(45, 145, 145);
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 50px;
+    padding: 10px 0px;
+    text-align: center;
+}
+.fab{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 0px 3px;
+}
