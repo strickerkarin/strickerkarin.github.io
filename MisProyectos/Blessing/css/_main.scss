@@ -15,10 +15,10 @@ main {
 
     nav {      
         ul {
-            display: flex;
-            justify-content: space-evenly;
-            font-size: 2.5rem;
             color: $color-5;
+            display: flex;
+            font-size: 2.5rem;
+            justify-content: space-evenly;
 
             a {
                 text-decoration: none;
@@ -32,11 +32,11 @@ main {
         align-items: center;
         
         .principal {
-            background-image: linear-gradient(
-                rgba(49, 35, 49, 0.4),
-                rgba(49, 35, 49, 0.45)
-              ), url('../img/pijamadasportada2.png');
-            background-color: rgba(0,0,0,0.6);
+            /* background-image: linear-gradient(
+                rgba(49, 35, 49, 0.25),
+                rgba(49, 35, 49, 0.6)
+              ), url('../img/pets/petsPortada1.png'); */
+            animation: fondo 20s infinite;
             width: 85vw;
             height: 100vh;
             background-size: cover;
@@ -46,12 +46,32 @@ main {
             justify-content: center;
             align-items: center;
 
+            @keyframes fondo{
+                0% {
+                    background-image: url('../img/BlessingPijamadas.png');       
+                }
+                        
+                33% {
+                    background-image: url('../img/BlessingCandiess.png');
+                }
+                66% {
+                    background-image: url('../img/BlessingPets.png');
+                }
+
+                100% {
+                    background-image: url('../img/BlessingPijamadas.png');       
+                }
+            }
+
             h1 {
-                font-size: 12rem;
-                font-family: $dancing;
+                display: none;
+                /* font-size: 12rem;
+                font-family: $glamorous;
                 font-weight: 100;
                 color: $color-3;
-                padding-bottom: 35vh;
+                padding-top: 20vh;
+                padding-right: 20vw;  */
+                
 
                 i {
                     font-size: 8.5rem;
@@ -131,7 +151,7 @@ main {
             }
 
             span {
-                font-family: $dancing;
+                font-family: $glamorous;
                 font-size: 7rem;
                 color: $color-6;
             }
@@ -321,7 +341,7 @@ main {
                 background-color: rgba(0,0,0,0.6);
 
             span {
-                font-family: $dancing;
+                font-family: $glamorous;
                 font-size: 7rem;
                 color: $color-6;
                 
@@ -344,7 +364,7 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: $color-6;
+            background-color: $color-5;
             color: white;
             border-radius: 30px;
             padding-top: 6vh;
@@ -373,10 +393,7 @@ main {
                 }
             }
 
-            img {
-                width: 15vw;
-                padding: 2vh 0vw;
-            }
+          
         }
     }
 

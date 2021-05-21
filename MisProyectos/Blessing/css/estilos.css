@@ -23,6 +23,31 @@
   src: url("../Fuentes/Dancing_Script/DancingScript-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: 'One Starry Night';
+  src: url("../Fuentes/one-starry-night/One Starry Night.ttf");
+}
+
+@font-face {
+  font-family: 'bakery';
+  src: url("../Fuentes/bakery/bakery.ttf");
+}
+
+@font-face {
+  font-family: 'prestige-signature-script';
+  src: url("../Fuentes/Prestige Signature Script - Demo/Prestige Signature Script - Demo.ttf");
+}
+
+@font-face {
+  font-family: 'simply-glamorous';
+  src: url("../Fuentes/simply-glamorous/Simply Glamorous.ttf");
+}
+
+@font-face {
+  font-family: 'sweet-hipster';
+  src: url("../Fuentes/sweet-hipster/Sweet Hipster.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -128,14 +153,14 @@ main .logo img {
 }
 
 main nav ul {
+  color: #207391;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 2.5rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-size: 2.5rem;
-  color: #207391;
 }
 
 main nav ul a {
@@ -156,9 +181,12 @@ main .marca {
 }
 
 main .marca .principal {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 35, 49, 0.4)), to(rgba(49, 35, 49, 0.45))), url("../img/pijamadasportada2.png");
-  background-image: linear-gradient(rgba(49, 35, 49, 0.4), rgba(49, 35, 49, 0.45)), url("../img/pijamadasportada2.png");
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-image: linear-gradient(
+                rgba(49, 35, 49, 0.25),
+                rgba(49, 35, 49, 0.6)
+              ), url('../img/pets/petsPortada1.png'); */
+  -webkit-animation: fondo 20s infinite;
+          animation: fondo 20s infinite;
   width: 85vw;
   height: 100vh;
   background-size: cover;
@@ -175,12 +203,44 @@ main .marca .principal {
           align-items: center;
 }
 
+@-webkit-keyframes fondo {
+  0% {
+    background-image: url("../img/BlessingPijamadas.png");
+  }
+  33% {
+    background-image: url("../img/BlessingCandiess.png");
+  }
+  66% {
+    background-image: url("../img/BlessingPets.png");
+  }
+  100% {
+    background-image: url("../img/BlessingPijamadas.png");
+  }
+}
+
+@keyframes fondo {
+  0% {
+    background-image: url("../img/BlessingPijamadas.png");
+  }
+  33% {
+    background-image: url("../img/BlessingCandiess.png");
+  }
+  66% {
+    background-image: url("../img/BlessingPets.png");
+  }
+  100% {
+    background-image: url("../img/BlessingPijamadas.png");
+  }
+}
+
 main .marca .principal h1 {
-  font-size: 12rem;
-  font-family: "Dancing Script", cursive;
-  font-weight: 100;
-  color: #f0eafb;
-  padding-bottom: 35vh;
+  display: none;
+  /* font-size: 12rem;
+                font-family: $glamorous;
+                font-weight: 100;
+                color: $color-3;
+                padding-top: 20vh;
+                padding-right: 20vw;  */
 }
 
 main .marca .principal h1 i {
@@ -277,7 +337,7 @@ main #nosotros .frase h2 {
 }
 
 main #nosotros .frase span {
-  font-family: "Dancing Script", cursive;
+  font-family: "simply-glamorous";
   font-size: 7rem;
   color: #27ccc4;
 }
@@ -516,7 +576,7 @@ main #clientes .experiencia p {
 }
 
 main #clientes .experiencia p span {
-  font-family: "Dancing Script", cursive;
+  font-family: "simply-glamorous";
   font-size: 7rem;
   color: #27ccc4;
 }
@@ -541,7 +601,7 @@ main #contactanos .contactanos {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #27ccc4;
+  background-color: #207391;
   color: white;
   border-radius: 30px;
   padding-top: 6vh;
@@ -574,11 +634,6 @@ main #contactanos .contactanos a {
 
 main #contactanos .contactanos a i {
   padding: 2vh 2vw;
-}
-
-main #contactanos .contactanos img {
-  width: 15vw;
-  padding: 2vh 0vw;
 }
 
 .pie {
