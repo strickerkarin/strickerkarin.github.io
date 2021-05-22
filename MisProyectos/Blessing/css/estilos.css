@@ -48,6 +48,26 @@
   src: url("../Fuentes/sweet-hipster/Sweet Hipster.ttf");
 }
 
+@font-face {
+  font-family: 'angelic-peace';
+  src: url("../Fuentes/angelic-peace/Angelic Peace.ttf");
+}
+
+@font-face {
+  font-family: 'awesome-birds';
+  src: url("../Fuentes/awesome-birds/Awesome Birds.ttf");
+}
+
+@font-face {
+  font-family: 'celosia-golden-font';
+  src: url("../Fuentes/celosia-golden-font/CelosiaGolden-7BYR4.ttf");
+}
+
+@font-face {
+  font-family: 'charlotte';
+  src: url("../Fuentes/charlotte/charlotte.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -75,6 +95,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 10;
 }
 
 header .llamanos {
@@ -306,7 +327,8 @@ main #nosotros {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto;
+  margin: 5vh auto;
+  padding: 3vh 0vw;
 }
 
 main #nosotros .nosotros {
@@ -318,7 +340,7 @@ main #nosotros .nosotros {
           justify-content: center;
 }
 
-main #nosotros .frase {
+main #nosotros .nosotros .frase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +350,7 @@ main #nosotros .frase {
   width: 50%;
 }
 
-main #nosotros .frase h2 {
+main #nosotros .nosotros .frase h2 {
   font-size: 5rem;
   color: black;
   text-align: right;
@@ -336,13 +358,13 @@ main #nosotros .frase h2 {
   padding: 1vw;
 }
 
-main #nosotros .frase span {
+main #nosotros .nosotros .frase h2 span {
   font-family: "simply-glamorous";
   font-size: 7rem;
   color: #27ccc4;
 }
 
-main #nosotros .vision {
+main #nosotros .nosotros .vision {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,12 +380,13 @@ main #nosotros .vision {
   padding: 2.7vw;
 }
 
-main #nosotros .vision p {
-  font-family: "Covered By Your Grace", cursive;
-  font-size: 2.5rem;
+main #nosotros .nosotros .vision p {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.9rem;
+  padding-top: 2vh;
 }
 
-main #nosotros .vision .boton-galeria {
+main #nosotros .nosotros .vision .boton-galeria {
   background-color: #907cc9;
   font-size: 3rem;
   text-align: center;
@@ -373,12 +396,12 @@ main #nosotros .vision .boton-galeria {
   transition: all 0.4s;
 }
 
-main #nosotros .vision .boton-galeria:hover {
+main #nosotros .nosotros .vision .boton-galeria:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
 
-main #nosotros .vision .boton-galeria a {
+main #nosotros .nosotros .vision .boton-galeria a {
   text-decoration: none;
   color: white;
   padding: 5vh 3.5vw;
@@ -392,7 +415,7 @@ main #productos {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 20vh auto 0vh;
+  margin: 30vh auto 0vh;
 }
 
 main #productos .productos {
@@ -468,7 +491,7 @@ main #productos .productos .Ble .Pets {
   background-size: cover;
 }
 
-main #productos .productos .Ble .boton {
+main #productos .productos .Ble .boton1 {
   background-color: #27ccc4;
   font-size: 3rem;
   text-align: center;
@@ -480,7 +503,41 @@ main #productos .productos .Ble .boton {
   width: 10vw;
 }
 
-main #productos .productos .Ble .boton:hover {
+main #productos .productos .Ble .boton1:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+main #productos .productos .Ble .boton2 {
+  background-color: #207391;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 35px;
+  margin-top: 5vh;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 10vw;
+}
+
+main #productos .productos .Ble .boton2:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+main #productos .productos .Ble .boton3 {
+  background-color: #907cc9;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 35px;
+  margin-top: 5vh;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 10vw;
+}
+
+main #productos .productos .Ble .boton3:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
@@ -567,7 +624,7 @@ main #clientes .experiencia {
 }
 
 main #clientes .experiencia p {
-  font-size: 6rem;
+  font-size: 5.5rem;
   color: white;
   text-align: right;
   font-family: "Amatic SC", cursive;
@@ -577,7 +634,7 @@ main #clientes .experiencia p {
 
 main #clientes .experiencia p span {
   font-family: "simply-glamorous";
-  font-size: 7rem;
+  font-size: 5.5rem;
   color: #27ccc4;
 }
 
@@ -604,7 +661,7 @@ main #contactanos .contactanos {
   background-color: #207391;
   color: white;
   border-radius: 30px;
-  padding-top: 6vh;
+  padding: 6vh 0vh;
 }
 
 main #contactanos .contactanos h4 {

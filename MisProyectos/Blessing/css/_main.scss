@@ -126,70 +126,72 @@ main {
         height: 50vh;
         display: flex;
         justify-content: center;        
-        margin: auto;
-    
+        margin: 5vh auto;
+        padding: 3vh 0vw;
+             
     
         .nosotros {
             display: flex;
-            justify-content: center;           
-            
-        }
+            justify-content: center;  
+               
         
-        .frase{
-            display: flex;
-            justify-content: flex-end;
-            width: 50%;
-            
+        
+            .frase {
+                display: flex;
+                justify-content: flex-end;
+                width: 50%;                        
 
-            h2 {
-                font-size: 5rem;
-                color: black;
-                text-align: right;
-                font-family: $amatic;
-                padding: 1vw;
+                h2 {
+                    font-size: 5rem;
+                    color: black;
+                    text-align: right;
+                    font-family: $amatic;
+                    padding: 1vw;
 
-            }
-
-            span {
-                font-family: $glamorous;
-                font-size: 7rem;
-                color: $color-6;
-            }
-        }
-
-        .vision {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: justify;
-            width: 50%;
-            padding: 2.7vw;
-            
-            p {
-                font-family: $grace;
-                font-size: 2.5rem;
-                
-            }
-
-            .boton-galeria {
-                background-color: $color-7;
-                font-size: 3rem;
-                text-align: center;
-                border-radius: 35px;
-                margin-top: 5vh;
-                transition: all 0.4s;
-
-                &:hover {
-                    transform: scale(1.3);
+                    span {
+                        font-family: $glamorous;
+                        font-size: 7rem;
+                        color: $color-6;
+                    }
                 }
-                
+            }                
+    
 
-                a {
-                    text-decoration: none;
-                    color: white;
-                    padding: 5vh 3.5vw;
+            .vision {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: justify;
+                width: 50%;
+                padding: 2.7vw;
+                
+                p {
+                    font-family: $amatic;
+                    font-size: 2.9rem;
+                    padding-top: 2vh;
+                    
                 }
 
+                .boton-galeria {
+                    background-color: $color-7;
+                    font-size: 3rem;
+                    text-align: center;
+                    border-radius: 35px;
+                    margin-top: 5vh;
+                    transition: all 0.4s;
+
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+                    
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        padding: 5vh 3.5vw;
+                    }
+
+                }
             }
         }
 
@@ -199,7 +201,7 @@ main {
         width: 85vw;
         display: flex;
         justify-content: center;
-        margin: 20vh auto 0vh;
+        margin: 30vh auto 0vh;
     
     
         .productos {
@@ -259,10 +261,20 @@ main {
                     background-size: cover;
                 }
 
-                .boton {
+                .boton1 {
                 @include boton($color-6,10vw);
                 
                 }
+
+                .boton2 {
+                    @include boton($color-5,10vw);
+                    
+                }
+
+                .boton3 {
+                    @include boton($color-7,10vw);
+                    
+                    }
             }
 
 
@@ -333,7 +345,7 @@ main {
             width: 29.5vw;
 
             p {
-                font-size: 6rem;
+                font-size: 5.5rem;
                 color: white;
                 text-align: right;
                 font-family: $amatic;
@@ -342,7 +354,7 @@ main {
 
             span {
                 font-family: $glamorous;
-                font-size: 7rem;
+                font-size: 5.5rem;
                 color: $color-6;
                 
                 
@@ -367,7 +379,7 @@ main {
             background-color: $color-5;
             color: white;
             border-radius: 30px;
-            padding-top: 6vh;
+            padding: 6vh 0vh;
             
 
             h4 {
