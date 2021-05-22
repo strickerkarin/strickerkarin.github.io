@@ -76,6 +76,10 @@
   font-family: "Amatic SC", cursive;
 }
 
+body {
+  font-size: 12px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,29 +140,6 @@ header i {
   margin: 0vw 0.3vw;
 }
 
-main {
-  /* section {
-        border: 5px solid black;
-    } */
-  /*
-    .boton-whatsapp {
-        position: fixed;
-        bottom: 10vh;
-        right: 5vw;
-        transition: all 0.4s;
-        border-radius: 50%;
-
-        img {
-            border-radius: 50%;
-            width: 6vw;
-        }
-
-        &:hover {
-            transform: scale(0.9);
-        }
-    } */
-}
-
 main .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,7 +159,7 @@ main nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2.5rem;
+  font-size: 3rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -186,6 +167,17 @@ main nav ul {
 
 main nav ul a {
   text-decoration: none;
+  color: black;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+main nav ul a:visited {
+  color: black;
+}
+
+main nav ul a:hover {
+  text-decoration: underline;
 }
 
 main .marca {
@@ -202,14 +194,10 @@ main .marca {
 }
 
 main .marca .principal {
-  /* background-image: linear-gradient(
-                rgba(49, 35, 49, 0.25),
-                rgba(49, 35, 49, 0.6)
-              ), url('../img/pets/petsPortada1.png'); */
   -webkit-animation: fondo 20s infinite;
           animation: fondo 20s infinite;
   width: 85vw;
-  height: 100vh;
+  height: 75vh;
   background-size: cover;
   background-position: center;
   margin-top: 5vh;
@@ -224,33 +212,43 @@ main .marca .principal {
           align-items: center;
 }
 
+main .marca .principal h1 {
+  display: none;
+  font-size: 12rem;
+  font-family: "simply-glamorous";
+  font-weight: 100;
+  color: #f0eafb;
+  padding-top: 20vh;
+  padding-right: 20vw;
+}
+
 @-webkit-keyframes fondo {
   0% {
-    background-image: url("../img/BlessingPijamadas.png");
+    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
   }
   33% {
-    background-image: url("../img/BlessingCandiess.png");
+    background-image: url("../img/Fondos-principal/Diapositiva2.PNG");
   }
   66% {
-    background-image: url("../img/BlessingPets.png");
+    background-image: url("../img/Fondos-principal/Diapositiva3.PNG");
   }
   100% {
-    background-image: url("../img/BlessingPijamadas.png");
+    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
   }
 }
 
 @keyframes fondo {
   0% {
-    background-image: url("../img/BlessingPijamadas.png");
+    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
   }
   33% {
-    background-image: url("../img/BlessingCandiess.png");
+    background-image: url("../img/Fondos-principal/Diapositiva2.PNG");
   }
   66% {
-    background-image: url("../img/BlessingPets.png");
+    background-image: url("../img/Fondos-principal/Diapositiva3.PNG");
   }
   100% {
-    background-image: url("../img/BlessingPijamadas.png");
+    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
   }
 }
 
@@ -262,11 +260,6 @@ main .marca .principal h1 {
                 color: $color-3;
                 padding-top: 20vh;
                 padding-right: 20vw;  */
-}
-
-main .marca .principal h1 i {
-  font-size: 8.5rem;
-  margin: 0vw 2vw;
 }
 
 main .marca .secciones-marca {

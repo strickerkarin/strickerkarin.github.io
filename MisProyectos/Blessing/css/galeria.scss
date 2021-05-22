@@ -1,9 +1,6 @@
 body, html {
-    overflow: hidden; 
-    
-    
+    overflow: hidden;       
 } 
-
 
 .parallax-content { 
     height: 100vh;
@@ -11,25 +8,15 @@ body, html {
     overflow-x: hidden; 
     overflow-y: auto; 
     perspective: 0.9px;
-    
-    nav {
-        li {
-            a {
-                text-decoration: none;
-                color: black;
-                font-size: 4rem;
-            }
-        }
-    }
-
-    p {
+  
+    .titulo {
         font-size: 5rem;
         text-align: center;
-    }
-       
+        margin: 8vh 0vw;
+    }       
 
     .parallax-section {
-        margin: 5vh 20vw;;
+        margin: 2vh 20vw;;
 
         .parallax-img {
             position: absolute;
@@ -40,12 +27,35 @@ body, html {
             transform: translateZ(-1px) scale(3.5);
             background-size: 100%;
             z-index: -1;
-            margin: auto;
-                      
+            margin: auto;                      
         }        
     }
 
-    .grid-container {
+    .inicio {        
+        background-color: #27ccc4;
+        font-size: 3rem;
+        text-align: center;
+        border-radius: 35px;
+        color: white;
+        transition: all 0.4s;
+        width: 16vw;
+        margin: 0vh auto 5vh;
+        padding: 0.5vh 0vh;
+
+        &:hover {
+        transform: scale(1.3);
+        }
+        
+        a {
+            text-decoration: none;
+
+            &:visited {
+            color: white;
+            }         
+        }       
+    }
+
+    .grid-container-pij {
         display: grid;
         grid-template-rows: repeat(5, 10vw);
         grid-template-columns: repeat(5,10vw);
@@ -55,179 +65,245 @@ body, html {
         img {
             width: 10vw;
             height: 10vw;
-        }         
-
-        .grid-item1, .grid-item2, .grid-item3, 
-        .grid-item4, .grid-item5, .grid-item6, 
-        .grid-item7, .grid-item8, .grid-item9,
-        .grid-item10, .grid-item11, .grid-item12,
-        .grid-item13, .grid-item14, .grid-item15,
-        .grid-item16, .grid-item17, .grid-item18,
-        .grid-item19, .grid-item20, .grid-item21,
-        .grid-item22, .grid-item23, .grid-item24,
-        .grid-item25, .grid-item26, .grid-item27,
-        .grid-item28, .grid-item29, .grid-item30,
-        .grid-item31, .grid-item32, .grid-item33,
-        .grid-item34, .grid-item35, .grid-item36,
-        .grid-item37, .grid-item38, .grid-item39,
-        .grid-item40, .grid-item41, .grid-item42 {
-            box-shadow:2px 2px 20px;
-            transition: all 0.5s;
-            background-size: cover;
-            background-position: center;
-
-            &:hover {
-                transform: scale(2.5);
-            }
         }
-
-        .grid-item1 {
-            background-image: url('../img/Pijamadas/P2.jpeg');
-        }
-
-        .grid-item2 {
-            background-image: url('../img/Pijamadas/P5.jpeg');
-        }
-
-        .grid-item3 {
-            background-image: url('../img/Pijamadas/P10.jpeg');
-        }
-
-        .grid-item4 {
-            background-image: url('../img/Pijamadas/P12.jpeg');
-        }
-
-        .grid-item5 {
-            background-image: url('../img/Pijamadas/P13.jpeg');
-        }
-
-        .grid-item6 {
-            background-image: url('../img/Pijamadas/P14.jpeg');
-        }
-
-        .grid-item7 {
-            background-image: url('../img/Pijamadas/P17.jpeg');
-        }
-
-        .grid-item8 {
-            background-image: url('../img/Pijamadas/P20.jpeg');
-        }
-
-        .grid-item9 {
-            background-image: url('../img/Pijamadas/P22.jpeg');
-        }
-
-        .grid-item10 {
-            background-image: url('../img/Pijamadas/P25.jpeg');
-        }
-
-        .grid-item11 {
-            background-image: url('../img/Pijamadas/P30.jpeg');
-        }
-
-        .grid-item12 {
-            background-image: url('../img/Pijamadas/P43.jpeg');
-        }
-
-        .grid-item13 {
-            background-image: url('../img/Pijamadas/P58.jpeg');
-        }
-
-        .grid-item14 {
-            background-image: url('../img/Pijamadas/Pijamadas1.png');
-        }
-
-        .grid-item15 {
-            background-image: url('../img/Pijamadas/Pijamadas2.png');
-        }
-
-        .grid-item16 {
-            background-image: url('../img/Pijamadas/Pijamadas4.png');
-        }
-
-        .grid-item17 {
-            background-image: url('../img/Pijamadas/Pijamadas8.png');
-        }
-
-        .grid-item18 {
-            background-image: url('../img/Pijamadas/Pijamadas13.png');
-        }
-
-        .grid-item19 {
-            background-image: url('../img/Pijamadas/Pijamadas15.png');
-        }
-
-        .grid-item20 {
-            background-image: url('../img/Pijamadas/Pijamadas18.png');
-        }
-
-        .grid-item21 {
-            background-image: url('../img/Pijamadas/Pijamadas12.png');
-        }
-
-        .grid-item22 {
-            background-image: url('../img/Pijamadas/Pijamadas10.png');
-        }
-
-        .grid-item23 {
-            background-image: url('../img/Pijamadas/Pijamadas16.png');
-        }
-
-        .grid-item24 {
-            background-image: url('../img/Pijamadas/Pijamadas17.png');
-        }
-
-        .grid-item25 {
-            background-image: url('../img/Pijamadas/Pijamadas21.png');
-        }
-
-        .grid-item26 {
-            background-image: url('../img/Candies/Candies0.png');
-        }
-
-        .grid-item27 {
-            background-image: url('../img/Candies/Candies1.png');
-        }
-        .grid-item28 {
-            background-image: url('../img/Candies/Candies2.png');
-        }
-        .grid-item29 {
-            background-image: url('../img/Candies/Candies3.png');
-        }
-        .grid-item30 {
-            background-image: url('../img/Candies/Candies4.png');
-        }
-        .grid-item31 {
-            background-image: url('../img/Candies/Candies5.png');
-        }
-        .grid-item32 {
-            background-image: url('../img/Candies/Candies6.png');
-        }
-        .grid-item33 {
-            background-image: url('../img/Candies/Candies7.png');
-        }
-        .grid-item34 {
-            background-image: url('../img/Candies/Candies8.png');
-        }
-        .grid-item35 {
-            background-image: url('../img/Candies/Candies9.png');
-        }
-        .grid-item36 {
-            background-image: url('../img/Candies/Candies10.png');
-        }
-        .grid-item37 {
-            background-image: url('../img/Candies/Candies11.png');
-        }
-        .grid-item38 {
-            background-image: url('../img/Candies/Candies12.png');
-        }
-        .grid-item39 {
-            background-image: url('../img/Candies/Candies13.png');
-        }
-        .grid-item40 {
-            background-image: url('../img/Candies/c1.jpeg');
-        }
-
-
     }
+    
+    .grid-container-can {
+        display: grid;
+        grid-template-rows: repeat(3, 10vw);
+        grid-template-columns: repeat(5,10vw);
+        grid-gap: 2.1vw;
+        margin-right: auto;                  
+        
+        img {
+            width: 10vw;
+            height: 10vw;
+        }
+    } 
+
+    .grid-container-pet {
+        display: grid;
+        grid-template-rows: repeat(4, 10vw);
+        grid-template-columns: repeat(5,10vw);
+        grid-gap: 2.1vw;
+        margin-right: auto;
+        margin-bottom: 15vh;                  
+        
+        img {
+            width: 10vw;
+            height: 10vw;
+        }
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, 
+    .grid-item4, .grid-item5, .grid-item6, 
+    .grid-item7, .grid-item8, .grid-item9,
+    .grid-item10, .grid-item11, .grid-item12,
+    .grid-item13, .grid-item14, .grid-item15,
+    .grid-item16, .grid-item17, .grid-item18,
+    .grid-item19, .grid-item20, .grid-item21,
+    .grid-item22, .grid-item23, .grid-item24,
+    .grid-item25, .grid-item26, .grid-item27,
+    .grid-item28, .grid-item29, .grid-item30,
+    .grid-item31, .grid-item32, .grid-item33,
+    .grid-item34, .grid-item35, .grid-item36,
+    .grid-item37, .grid-item38, .grid-item39,
+    .grid-item40, .grid-item41, .grid-item42,
+    .grid-item43, .grid-item44, .grid-item45,
+    .grid-item46, .grid-item47, .grid-item48,
+    .grid-item49, .grid-item50, .grid-item51,
+    .grid-item52, .grid-item53, .grid-item53,
+    .grid-item54, .grid-item55, .grid-item56,
+    .grid-item57, .grid-item58, .grid-item59,
+    .grid-item60 {
+        box-shadow:2px 2px 20px;
+        transition: all 0.5s;
+        background-size: cover;
+        background-position: center;
+
+        &:hover {
+            transform: scale(2.5);
+        }
+    }
+
+    .grid-item1 {
+        background-image: url('../img/Pijamadas/P2.jpeg');
+    }
+    .grid-item2 {
+        background-image: url('../img/Pijamadas/P5.jpeg');
+    }
+    .grid-item3 {
+        background-image: url('../img/Pijamadas/P10.jpeg');
+    }
+    .grid-item4 {
+        background-image: url('../img/Pijamadas/P12.jpeg');
+    }
+    .grid-item5 {
+        background-image: url('../img/Pijamadas/P13.jpeg');
+    }
+    .grid-item6 {
+        background-image: url('../img/Pijamadas/P14.jpeg');
+    }
+    .grid-item7 {
+        background-image: url('../img/Pijamadas/P17.jpeg');
+    }
+    .grid-item8 {
+        background-image: url('../img/Pijamadas/P20.jpeg');
+    }
+    .grid-item9 {
+        background-image: url('../img/Pijamadas/P22.jpeg');
+    }
+    .grid-item10 {
+        background-image: url('../img/Pijamadas/P25.jpeg');
+    }
+    .grid-item11 {
+        background-image: url('../img/Pijamadas/P30.jpeg');
+    }
+    .grid-item12 {
+        background-image: url('../img/Pijamadas/P43.jpeg');
+    }
+    .grid-item13 {
+        background-image: url('../img/Pijamadas/P58.jpeg');
+    }
+    .grid-item14 {
+        background-image: url('../img/Pijamadas/pijamadas1.png');
+    }
+    .grid-item15 {
+        background-image: url('../img/Pijamadas/pijamadas2.png');
+    }
+    .grid-item16 {
+        background-image: url('../img/Pijamadas/pijamadas4.png');
+    }
+    .grid-item17 {
+        background-image: url('../img/Pijamadas/pijamadas8.png');
+    }
+    .grid-item18 {
+        background-image: url('../img/Pijamadas/pijamadas13.png');
+    }
+    .grid-item19 {
+        background-image: url('../img/Pijamadas/pijamadas15.png');
+    }
+    .grid-item20 {
+        background-image: url('../img/Pijamadas/pijamadas18.png');
+    }
+    .grid-item21 {
+        background-image: url('../img/Pijamadas/pijamadas12.png');
+    }
+    .grid-item22 {
+        background-image: url('../img/Pijamadas/pijamadas10.png');
+    }
+    .grid-item23 {
+        background-image: url('../img/Pijamadas/pijamadas16.png');
+    }
+    .grid-item24 {
+        background-image: url('../img/Pijamadas/pijamadas17.png');
+    }
+    .grid-item25 {
+        background-image: url('../img/Pijamadas/pijamadas21.png');
+    }
+    .grid-item26 {
+        background-image: url('../img/Candies/Candies0.png');
+    }
+    .grid-item27 {
+        background-image: url('../img/Candies/Candies1.png');
+    }
+    .grid-item28 {
+        background-image: url('../img/Candies/Candies2.png');
+    }
+    .grid-item29 {
+        background-image: url('../img/Candies/Candies3.png');
+    }
+    .grid-item30 {
+        background-image: url('../img/Candies/Candies4.png');
+    }
+    .grid-item31 {
+        background-image: url('../img/Candies/Candies5.png');
+    }
+    .grid-item32 {
+        background-image: url('../img/Candies/Candies6.png');
+    }
+    .grid-item33 {
+        background-image: url('../img/Candies/Candies7.png');
+    }
+    .grid-item34 {
+        background-image: url('../img/Candies/Candies8.png');
+    }
+    .grid-item35 {
+        background-image: url('../img/Candies/Candies9.png');
+    }
+    .grid-item36 {
+        background-image: url('../img/Candies/Candies10.png');
+    }
+    .grid-item37 {
+        background-image: url('../img/Candies/Candies11.png');
+    }
+    .grid-item38 {
+        background-image: url('../img/Candies/Candies12.png');
+    }
+    .grid-item39 {
+        background-image: url('../img/Candies/Candies13.png');
+    }
+    .grid-item40 {
+        background-image: url('../img/Candies/c1.jpeg');    
+    }
+    .grid-item41 {
+        background-image: url('../img/Pets/P1.jpeg');
+    }
+    .grid-item42 {
+        background-image: url('../img/Pets/P2.jpeg');
+    }
+    .grid-item43 {
+        background-image: url('../img/Pets/P13.jpeg');
+    }
+    .grid-item44 {
+        background-image: url('../img/Pets/P4.jpeg');
+    }
+    .grid-item45 {
+        background-image: url('../img/Pets/P5.jpeg');
+    }
+    .grid-item46 {
+        background-image: url('../img/Pets/pets3.png');
+    }
+    .grid-item47 {
+        background-image: url('../img/Pets/P7.jpeg');
+    }
+    .grid-item48 {
+        background-image: url('../img/Pets/P8.jpeg');
+    }
+    .grid-item49 {
+        background-image: url('../img/Pets/P9.jpeg');
+    }
+    .grid-item50 {
+        background-image: url('../img/Pets/P11.jpeg');
+    }
+    .grid-item51 {
+        background-image: url('../img/Pets/P12.jpeg');
+    }
+    .grid-item52 {
+        background-image: url('../img/Pets/P14.jpeg');
+    }
+    .grid-item53 {
+        background-image: url('../img/Pets/pets1.png');
+    }
+    .grid-item54 {
+        background-image: url('../img/Pets/pets2.png');
+    }
+    .grid-item55 {
+        background-image: url('../img/Pets/pets4.png');
+    }
+    .grid-item56 {
+        background-image: url('../img/Pets/pets5.png');
+    }
+    .grid-item57 {
+        background-image: url('../img/Pets/pets6.png');
+    }
+    .grid-item58 {
+        background-image: url('../img/Pets/pets7.png');
+    }
+    .grid-item59 {
+        background-image: url('../img/Pets/pets8.png');
+    }
+    .grid-item60 {
+        background-image: url('../img/Pets/pets9.png');
+    }    
 }

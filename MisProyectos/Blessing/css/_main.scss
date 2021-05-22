@@ -1,7 +1,4 @@
-main {
-    /* section {
-        border: 5px solid black;
-    } */
+main {   
 
     .logo {
         display: flex;
@@ -17,12 +14,21 @@ main {
         ul {
             color: $color-5;
             display: flex;
-            font-size: 2.5rem;
-            justify-content: space-evenly;
+            font-size: 3rem;
+            justify-content: space-evenly;            
 
             a {
                 text-decoration: none;
-            }
+                color: black;
+                transition: all 3s;
+
+                &:visited {
+                    color: black;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }     
         }
     }
 
@@ -31,14 +37,10 @@ main {
         flex-direction: column;
         align-items: center;
         
-        .principal {
-            /* background-image: linear-gradient(
-                rgba(49, 35, 49, 0.25),
-                rgba(49, 35, 49, 0.6)
-              ), url('../img/pets/petsPortada1.png'); */
+        .principal {            
             animation: fondo 20s infinite;
             width: 85vw;
-            height: 100vh;
+            height: 75vh;
             background-size: cover;
             background-position: center;
             margin-top: 5vh;
@@ -46,20 +48,31 @@ main {
             justify-content: center;
             align-items: center;
 
+            h1 {
+                display: none;
+                font-size: 12rem;
+                font-family: $glamorous;
+                font-weight: 100;
+                color: $color-3;
+                padding-top: 20vh;
+                padding-right: 20vw;                
+            }
+
             @keyframes fondo{
                 0% {
-                    background-image: url('../img/BlessingPijamadas.png');       
+                    background-image: url('../img/Fondos-principal/Diapositiva1.PNG');                                                         
                 }
                         
                 33% {
-                    background-image: url('../img/BlessingCandiess.png');
+                    background-image: url('../img/Fondos-principal/Diapositiva2.PNG');                                 
                 }
+
                 66% {
-                    background-image: url('../img/BlessingPets.png');
+                    background-image: url('../img/Fondos-principal/Diapositiva3.PNG');
                 }
 
                 100% {
-                    background-image: url('../img/BlessingPijamadas.png');       
+                    background-image: url('../img/Fondos-principal/Diapositiva1.PNG');
                 }
             }
 
@@ -70,13 +83,7 @@ main {
                 font-weight: 100;
                 color: $color-3;
                 padding-top: 20vh;
-                padding-right: 20vw;  */
-                
-
-                i {
-                    font-size: 8.5rem;
-                    margin: 0vw 2vw;
-                }
+                padding-right: 20vw;  */             
             }
         }
 
@@ -127,15 +134,12 @@ main {
         display: flex;
         justify-content: center;        
         margin: 5vh auto;
-        padding: 3vh 0vw;
-             
+        padding: 3vh 0vw;             
     
         .nosotros {
             display: flex;
-            justify-content: center;  
-               
-        
-        
+            justify-content: center;                
+                
             .frase {
                 display: flex;
                 justify-content: flex-end;
@@ -156,7 +160,6 @@ main {
                 }
             }                
     
-
             .vision {
                 display: flex;
                 flex-direction: column;
@@ -194,15 +197,13 @@ main {
                 }
             }
         }
-
     }
 
     #productos {
         width: 85vw;
         display: flex;
         justify-content: center;
-        margin: 30vh auto 0vh;
-    
+        margin: 30vh auto 0vh;    
     
         .productos {
             display: flex;
@@ -211,7 +212,6 @@ main {
             flex-grow: 1;
             padding: 10vh 0vw;
             
-
             h3 {
                 font-size: 3.5rem;
             }
@@ -236,12 +236,10 @@ main {
                 justify-content: center;
                 align-items: center;
             
-
                 .imagen {
                 width: 20vw;
                 height: 25vh;
                 }
-
                                
                 .Pij {
                     background-image: url('../img/Pijamadas/pijamadas11.png');
@@ -262,24 +260,18 @@ main {
                 }
 
                 .boton1 {
-                @include boton($color-6,10vw);
-                
+                @include boton($color-6,10vw);                
                 }
 
                 .boton2 {
-                    @include boton($color-5,10vw);
-                    
+                    @include boton($color-5,10vw);                    
                 }
 
                 .boton3 {
-                    @include boton($color-7,10vw);
-                    
-                    }
+                    @include boton($color-7,10vw);                    
+                }
             }
-
-
-        }    
-        
+        }          
     }
 
     #clientes {
@@ -332,10 +324,7 @@ main {
                     margin: 2vw;
                     border-radius: 50%;
                 }
-            }
-
-            
-
+            }           
         }
 
         .experiencia {
@@ -355,19 +344,14 @@ main {
             span {
                 font-family: $glamorous;
                 font-size: 5.5rem;
-                color: $color-6;
-                
-                
+                color: $color-6;              
                 }
             }
-        }       
-
-        
+        }            
     }
 
     #contactanos {
-        padding-top: 0.5vh;
-    
+        padding-top: 0.5vh;    
 
         .contactanos {
             width: 48vw;
@@ -379,13 +363,11 @@ main {
             background-color: $color-5;
             color: white;
             border-radius: 30px;
-            padding: 6vh 0vh;
-            
+            padding: 6vh 0vh;            
 
             h4 {
                 font-size: 5.5rem;
-                font-weight: bold;
-                
+                font-weight: bold;                
             }
 
             .links-contacto {
@@ -403,27 +385,7 @@ main {
                 i {
                     padding: 2vh 2vw;
                 }
-            }
-
-          
+            }         
         }
-    }
-
-    /*
-    .boton-whatsapp {
-        position: fixed;
-        bottom: 10vh;
-        right: 5vw;
-        transition: all 0.4s;
-        border-radius: 50%;
-
-        img {
-            border-radius: 50%;
-            width: 6vw;
-        }
-
-        &:hover {
-            transform: scale(0.9);
-        }
-    } */
+    }    
 }
