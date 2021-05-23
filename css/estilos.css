@@ -118,7 +118,7 @@ header nav .menu-nav li {
 }
 
 header nav .menu-nav li:hover {
-  color: thistle;
+  color: #b8af82;
 }
 
 header nav .menu-nav li:hover > ul {
@@ -132,7 +132,7 @@ header nav .menu-nav li .menu-desplegable {
   top: 100%;
   left: 0;
   background: #eee;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   list-style-type: none;
   color: black;
   -webkit-box-orient: vertical;
@@ -143,6 +143,9 @@ header nav .menu-nav li .menu-desplegable {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 10px 0px;
+  -webkit-box-shadow: 8px 8px 20px;
+          box-shadow: 8px 8px 20px;
+  border: none;
 }
 
 header nav .menu-nav li .menu-desplegable li {
@@ -152,7 +155,7 @@ header nav .menu-nav li .menu-desplegable li {
 }
 
 header nav .menu-nav li .menu-desplegable li:hover {
-  background-color: darkcyan;
+  background-color: dimgrey;
 }
 
 header nav .menu-nav li .menu-desplegable a {

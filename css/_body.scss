@@ -82,7 +82,7 @@ header {
                 padding: 2% 3%; 
                 
                 &:hover {
-                    color:thistle;                    
+                    color: rgb(184, 175, 130)                
                 }
                 
 
@@ -97,12 +97,14 @@ header {
                     top:100%;
                     left:0;
                     background:#eee;
-                    background-color: white;
+                    background-color: rgba(255,255,255,0.5);
                     list-style-type: none;
                     color: black; 
                     flex-direction: column;
                     justify-content: flex-start; 
-                    margin: 10px 0px;                  
+                    margin: 10px 0px;
+                    box-shadow: 8px 8px 20px; 
+                    border: none;                 
                     
                     li {
                         float:none;
@@ -110,7 +112,7 @@ header {
                         padding: 5%; 
                         
                         &:hover {
-                            background-color:darkcyan;
+                            background-color:dimgrey;
                         }
                     }               
                     
