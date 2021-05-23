@@ -1,0 +1,135 @@
+body, html {
+    overflow: hidden;
+}
+
+  /*  Estilos parallax */
+.parallax-contenido {
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    perspective: 0.9px;
+
+}
+
+.parallax-section {
+    
+    position: relative;
+    padding: 30vh 0;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.parallax-img {
+    position: absolute;
+    top: 0vh;
+    right: 0;
+    bottom: 0vh;
+    left: 0;
+    transform: translateZ(-1px) scale(2.4);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.parallax-img2 {
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(2);
+    background-size: 100%;
+    z-index: -2;
+}
+.bg {
+    color: black;
+    top: 100vh;
+    background: white;
+    height: 15vh;
+    padding: 50vh 0vw;
+    box-shadow:3px 3px 20px;
+    
+}
+
+header {
+    h1 {
+        color: white;
+        font-size: 4rem;
+        font-family: 'charlotte';
+        font-weight:100;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+        text-align: center;
+        text-shadow: 16px 16px 12px black;
+    }
+
+    nav {
+        .menu-nav {
+            color: white;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            
+
+            li {
+                font-family: 'Julius-Sans-One';
+                padding: 2% 3%; 
+                
+                &:hover {
+                    color:thistle;                    
+                }
+                
+
+                &:hover > ul {
+                    display:flex;                    
+                }               
+                
+               
+              
+                .menu-desplegable {  
+                    display:none;
+                    top:100%;
+                    left:0;
+                    background:#eee;
+                    background-color: white;
+                    list-style-type: none;
+                    color: black; 
+                    flex-direction: column;
+                    justify-content: flex-start; 
+                    margin: 10px 0px;                  
+                    
+                    li {
+                        float:none;
+                        width:100%;
+                        padding: 5%; 
+                        
+                        &:hover {
+                            background-color:darkcyan;
+                        }
+                    }               
+                    
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-family: 'Julius-Sans-One';
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                        
+                    }
+                }   
+            }  
+
+        }
+    }
+}
+
+
+
+

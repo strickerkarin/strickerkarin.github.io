@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'bakery';
+  src: url("../fuentes/bakery/bakery.ttf");
+}
+
+@font-face {
+  font-family: 'celosia-golden-font';
+  src: url("../fuentes/celosia-golden-font/CelosiaGolden-7BYR4.ttf");
+}
+
+@font-face {
+  font-family: 'charlotte';
+  src: url("../fuentes/charlotte/");
+}
+
+@font-face {
+  font-family: 'Julius-Sans-One';
+  src: url("../fuentes/Julius_Sans_One/JuliusSansOne-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body, html {
+  overflow: hidden;
+}
+
+/*  Estilos parallax */
+.parallax-contenido {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 0.9px;
+          perspective: 0.9px;
+}
+
+.parallax-section {
+  position: relative;
+  padding: 30vh 0;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.parallax-img {
+  position: absolute;
+  top: 0vh;
+  right: 0;
+  bottom: 0vh;
+  left: 0;
+  -webkit-transform: translateZ(-1px) scale(2.4);
+          transform: translateZ(-1px) scale(2.4);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.parallax-img2 {
+  position: absolute;
+  top: 100vh;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+  background-size: 100%;
+  z-index: -2;
+}
+
+.bg {
+  color: black;
+  top: 100vh;
+  background: white;
+  height: 15vh;
+  padding: 50vh 0vw;
+  -webkit-box-shadow: 3px 3px 20px;
+          box-shadow: 3px 3px 20px;
+}
+
+header h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: 'charlotte';
+  font-weight: 100;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  text-align: center;
+  text-shadow: 16px 16px 12px black;
+}
+
+header nav .menu-nav {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header nav .menu-nav li {
+  font-family: 'Julius-Sans-One';
+  padding: 2% 3%;
+}
+
+header nav .menu-nav li:hover {
+  color: thistle;
+}
+
+header nav .menu-nav li:hover > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .menu-nav li .menu-desplegable {
+  display: none;
+  top: 100%;
+  left: 0;
+  background: #eee;
+  background-color: white;
+  list-style-type: none;
+  color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px 0px;
+}
+
+header nav .menu-nav li .menu-desplegable li {
+  float: none;
+  width: 100%;
+  padding: 5%;
+}
+
+header nav .menu-nav li .menu-desplegable li:hover {
+  background-color: darkcyan;
+}
+
+header nav .menu-nav li .menu-desplegable a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Julius-Sans-One';
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=estilos.css.map */
