@@ -96,6 +96,16 @@
     
     main {
 
+        section .logo {
+
+            width: 30vw;
+            margin: 0vh auto;
+
+            img {
+                width: 30vw;
+            }
+        }
+
         nav {
 
             ul {

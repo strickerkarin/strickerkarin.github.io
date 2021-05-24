@@ -773,6 +773,13 @@ main #contactanos .contactanos a i {
   header a.showroom {
     display: none;
   }
+  main section .logo {
+    width: 30vw;
+    margin: 0vh auto;
+  }
+  main section .logo img {
+    width: 30vw;
+  }
   main nav ul {
     font-size: 4.5rem;
     font-weight: bold;

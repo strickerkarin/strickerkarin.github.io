@@ -1,5 +1,5 @@
 body, html {
-    overflow: hidden;       
+    overflow-x: hidden;       
 } 
 
 .parallax-content { 
@@ -306,4 +306,144 @@ body, html {
     .grid-item60 {
         background-image: url('../img/Pets/pets9.png');
     }    
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 3.3rem;
+        font-weight: bold;
+        
+        
+        .horarios {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .parallax-content {
+        
+        .titulo {
+            font-size: 5rem;
+            text-align: center;
+            margin: 4vh 0vw;
+        }  
+
+        .inicio {
+            font-size: 4rem;
+            width: 20vw;
+        }
+    
+        .parallax-section {
+
+            margin-left: auto;
+            padding-left: 2vw;
+               
+            .parallax-img {
+        
+                transform: translateZ(-1px) scale(2);
+                background-size: 100%;
+                        
+            }        
+        }
+
+        .grid-container-pij {
+            grid-template-rows: repeat(5, 17vw);
+            grid-template-columns: repeat(5,17vw);
+            grid-gap: 2.5vw;
+                
+            img {
+                width: 17vw;
+                height: 17vw;
+            }
+        }
+        
+        .grid-container-can {
+            grid-template-rows: repeat(3, 17vw);
+            grid-template-columns: repeat(5,17vw);
+            grid-gap: 2.5vw;
+                        
+            
+            img {
+                width: 17vw;
+                height: 17vw;
+            }
+        } 
+
+        .grid-container-pet {
+            
+            grid-template-rows: repeat(4, 17vw);
+            grid-template-columns: repeat(5,17vw);
+            grid-gap: 2.5vw;
+                            
+            
+            img {
+                width: 17vw;
+                height: 17vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    html {
+        font-size: 4px;        
+    }
+
+    header {
+        font-size: 3.8rem;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+    .parallax-content {
+        .inicio {
+            font-size: 4rem;
+            width: 25vw;
+        }  
+
+        section .logo {
+
+            width: 30vw;
+            margin: 0vh auto;
+
+            img {
+                width: 30vw;
+            }
+        }
+        
+        .titulo {
+            font-size: 7rem;
+            
+        } 
+    
+        .grid-item1, .grid-item2, .grid-item3, 
+        .grid-item4, .grid-item5, .grid-item6, 
+        .grid-item7, .grid-item8, .grid-item9,
+        .grid-item10, .grid-item11, .grid-item12,
+        .grid-item13, .grid-item14, .grid-item15,
+        .grid-item16, .grid-item17, .grid-item18,
+        .grid-item19, .grid-item20, .grid-item21,
+        .grid-item22, .grid-item23, .grid-item24,
+        .grid-item25, .grid-item26, .grid-item27,
+        .grid-item28, .grid-item29, .grid-item30,
+        .grid-item31, .grid-item32, .grid-item33,
+        .grid-item34, .grid-item35, .grid-item36,
+        .grid-item37, .grid-item38, .grid-item39,
+        .grid-item40, .grid-item41, .grid-item42,
+        .grid-item43, .grid-item44, .grid-item45,
+        .grid-item46, .grid-item47, .grid-item48,
+        .grid-item49, .grid-item50, .grid-item51,
+        .grid-item52, .grid-item53, .grid-item53,
+        .grid-item54, .grid-item55, .grid-item56,
+        .grid-item57, .grid-item58, .grid-item59,
+        .grid-item60 {
+            box-shadow:2px 2px 5px;
+            transition: all 0.4s;
+            
+            &:hover {
+                transform: scale(3.5);
+            }
+        }
+    }
 }
