@@ -75,17 +75,21 @@ header {
             font-size: 1.8rem;
             text-transform: uppercase;
             font-weight: bold;
+            text-decoration: none;
+            
             
             a {
                 text-decoration: none;
+                color: white;
+                font-family:'Times New Roman', Times, serif;
                 &:visited {
                     color: white;
+                    
                 }
             }
 
             li {
-                font-family: 'Julius-Sans-One';
-                padding: 2% 3%; 
+                padding: 2% 3%;                
                 
                 &:hover {
                     font-weight: bold;

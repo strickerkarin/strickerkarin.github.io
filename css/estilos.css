@@ -18,6 +18,10 @@
   src: url("../fuentes/Julius_Sans_One/JuliusSansOne-Regular.ttf");
 }
 
+html {
+  font-size: 12px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -110,10 +114,13 @@ header nav .menu-nav {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: bold;
+  text-decoration: none;
 }
 
 header nav .menu-nav a {
   text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 header nav .menu-nav a:visited {
@@ -121,7 +128,6 @@ header nav .menu-nav a:visited {
 }
 
 header nav .menu-nav li {
-  font-family: 'Julius-Sans-One';
   padding: 2% 3%;
 }
 
