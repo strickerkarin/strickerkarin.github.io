@@ -77,12 +77,37 @@
         font-size: 4px;        
     }
 
+    header {
+        font-size: 3.8rem;
+        font-weight: bold;
+        justify-content: space-between;
+        
+
+        .horarios {
+            span {
+                display: none;
+            }
+        }
+
+        a.showroom{
+            display: none;
+        }
+    }
+    
     main {
 
+        nav {
+
+            ul {
+                font-size: 4.5rem;
+                font-weight: bold;
+            }
+            
+        }
        
         .marca {
-            width: 100vw;
-            height: 40vh;
+            width: 95vw;
+            height: 35vh;
             margin: 0vh auto;
 
             .principal {

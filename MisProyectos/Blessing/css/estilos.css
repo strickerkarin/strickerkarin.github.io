@@ -760,9 +760,26 @@ main #contactanos .contactanos a i {
   html {
     font-size: 4px;
   }
+  header {
+    font-size: 3.8rem;
+    font-weight: bold;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .horarios span {
+    display: none;
+  }
+  header a.showroom {
+    display: none;
+  }
+  main nav ul {
+    font-size: 4.5rem;
+    font-weight: bold;
+  }
   main .marca {
-    width: 100vw;
-    height: 40vh;
+    width: 95vw;
+    height: 35vh;
     margin: 0vh auto;
   }
   main .marca .principal {
