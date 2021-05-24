@@ -112,13 +112,22 @@ header nav .menu-nav {
   font-weight: bold;
 }
 
+header nav .menu-nav a {
+  text-decoration: none;
+}
+
+header nav .menu-nav a:visited {
+  color: white;
+}
+
 header nav .menu-nav li {
   font-family: 'Julius-Sans-One';
   padding: 2% 3%;
 }
 
 header nav .menu-nav li:hover {
-  color: #b8af82;
+  font-weight: bold;
+  text-shadow: 2px 2px 20px white;
 }
 
 header nav .menu-nav li:hover > ul {

@@ -1,0 +1,198 @@
+@media screen and (max-width: 768px){
+    html {
+        font-size: 7px;
+    }
+
+    main {
+
+        .logo {
+            img {
+                padding: 2vh 1vw;
+            }
+        }
+        .marca {
+            width: 100vw;
+            height: 45vh;
+            margin: 0vh auto;
+
+            .principal {
+                margin-top: 2vh;
+            }
+            
+        }
+
+        #nosotros {
+            margin: 0vh auto;
+            height: 35vh;
+
+            .nosotros {
+
+                .vision {
+                    padding: 2.7vw 2.7vw 0vw 2.7vw;
+
+                    .boton-galeria {
+                        a {
+                            padding: 5vh 3.5vw 0vh;
+                        }
+                    }
+                }
+            }                
+        }
+
+        #productos {
+            margin: 0vh auto;
+
+            .productos {
+                padding-bottom: 0vh;
+            }
+        }
+
+        #clientes {
+            margin: 0vh auto;
+        }
+
+        #contactanos {
+            width: 75vw;
+            margin: 0vh auto;
+
+            .contactanos {
+                width: 100%;
+                margin: 5vh auto;
+
+                h4 {
+                    font-size: 7rem;
+                }
+
+                a {
+                    font-size: 5rem;
+                    padding: 3vh 2vw 0vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    html {
+        font-size: 4px;        
+    }
+
+    main {
+
+       
+        .marca {
+            width: 100vw;
+            height: 40vh;
+            margin: 0vh auto;
+
+            .principal {
+                width: 95vw;
+                margin-top: 2vh;
+            }
+
+            .secciones-marca {
+                width: 95vw;
+                font-size: 3rem;
+
+                h3 {
+                    display: none;
+                }
+            }                     
+        }
+
+        #nosotros {
+            width: 95vw;
+            margin-bottom: 5vh;
+            margin-top: 5vh;
+           
+
+            .nosotros {
+
+                flex-direction:column;
+                
+
+                .frase {
+                    width: 100%;
+                    text-align: center;
+                    justify-content: flex-start;
+                    
+
+                    h2 {
+                        text-align: left;
+                        
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                .vision {
+                    padding: 0vh 3vw 2vw 3vw;
+                    width: 100%;
+
+                    p {
+                        font-size: 3.8rem;
+                    }                               
+
+                    .boton-galeria {
+                        margin-top: 2vh;
+                        margin-bottom: 2vh;
+                        width: 25vw;
+                        font-size: 4rem;
+                    }
+                }
+            }            
+                
+        }
+
+        #productos {
+
+            width: 95vw;
+            
+            .productos {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                h3 {
+                    font-size: 6rem;
+                }
+
+                img {
+                    width: 75vw;
+                }
+
+                p {
+                    font-size: 5rem;
+                    width: 75vw;
+                }
+
+                .Ble {
+                    .imagen {
+                        width: 75vw;
+                    }
+
+                    .boton1, .boton2, .boton3 {
+                        width: 25vw;
+                        font-size: 4rem;
+                        margin-top: 0vh;
+                        margin-bottom: 6vh;
+                    }
+                }
+            }
+        }
+
+        #clientes {
+            margin-top: 0vh;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+
+        #contactanos {
+            width: 95vw;
+        }
+
+       
+    }
+}

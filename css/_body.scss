@@ -76,13 +76,20 @@ header {
             text-transform: uppercase;
             font-weight: bold;
             
+            a {
+                text-decoration: none;
+                &:visited {
+                    color: white;
+                }
+            }
 
             li {
                 font-family: 'Julius-Sans-One';
                 padding: 2% 3%; 
                 
                 &:hover {
-                    color: rgb(184, 175, 130)                
+                    font-weight: bold;
+                    text-shadow: 2px 2px 20px white;                
                 }
                 
 

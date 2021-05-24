@@ -704,4 +704,157 @@ main #contactanos .contactanos a i {
   width: 2vw;
   margin: 1vh;
 }
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  main .logo img {
+    padding: 2vh 1vw;
+  }
+  main .marca {
+    width: 100vw;
+    height: 45vh;
+    margin: 0vh auto;
+  }
+  main .marca .principal {
+    margin-top: 2vh;
+  }
+  main #nosotros {
+    margin: 0vh auto;
+    height: 35vh;
+  }
+  main #nosotros .nosotros .vision {
+    padding: 2.7vw 2.7vw 0vw 2.7vw;
+  }
+  main #nosotros .nosotros .vision .boton-galeria a {
+    padding: 5vh 3.5vw 0vh;
+  }
+  main #productos {
+    margin: 0vh auto;
+  }
+  main #productos .productos {
+    padding-bottom: 0vh;
+  }
+  main #clientes {
+    margin: 0vh auto;
+  }
+  main #contactanos {
+    width: 75vw;
+    margin: 0vh auto;
+  }
+  main #contactanos .contactanos {
+    width: 100%;
+    margin: 5vh auto;
+  }
+  main #contactanos .contactanos h4 {
+    font-size: 7rem;
+  }
+  main #contactanos .contactanos a {
+    font-size: 5rem;
+    padding: 3vh 2vw 0vh;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 4px;
+  }
+  main .marca {
+    width: 100vw;
+    height: 40vh;
+    margin: 0vh auto;
+  }
+  main .marca .principal {
+    width: 95vw;
+    margin-top: 2vh;
+  }
+  main .marca .secciones-marca {
+    width: 95vw;
+    font-size: 3rem;
+  }
+  main .marca .secciones-marca h3 {
+    display: none;
+  }
+  main #nosotros {
+    width: 95vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+  main #nosotros .nosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #nosotros .nosotros .frase {
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main #nosotros .nosotros .frase h2 {
+    text-align: left;
+  }
+  main #nosotros .nosotros .frase h2 br {
+    display: none;
+  }
+  main #nosotros .nosotros .vision {
+    padding: 0vh 3vw 2vw 3vw;
+    width: 100%;
+  }
+  main #nosotros .nosotros .vision p {
+    font-size: 3.8rem;
+  }
+  main #nosotros .nosotros .vision .boton-galeria {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 25vw;
+    font-size: 4rem;
+  }
+  main #productos {
+    width: 95vw;
+  }
+  main #productos .productos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  main #productos .productos h3 {
+    font-size: 6rem;
+  }
+  main #productos .productos img {
+    width: 75vw;
+  }
+  main #productos .productos p {
+    font-size: 5rem;
+    width: 75vw;
+  }
+  main #productos .productos .Ble .imagen {
+    width: 75vw;
+  }
+  main #productos .productos .Ble .boton1, main #productos .productos .Ble .boton2, main #productos .productos .Ble .boton3 {
+    width: 25vw;
+    font-size: 4rem;
+    margin-top: 0vh;
+    margin-bottom: 6vh;
+  }
+  main #clientes {
+    margin-top: 0vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  main #contactanos {
+    width: 95vw;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */
