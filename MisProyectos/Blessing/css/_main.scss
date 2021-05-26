@@ -38,15 +38,16 @@ main {
         align-items: center;
         
         .principal {            
-            animation: fondo 20s infinite;
-            width: 85vw;
-            height: 75vh;
-            background-size: cover;
-            background-position: center;
-            margin-top: 5vh;
+            /* animation: fondo 20s infinite; */
+            width: 85%;
+            height: 97%;
+            /* background-size: cover;
+            background-position: center; */
+            /* margin-top: 5vh; */
             display: flex;
             justify-content: center;
             align-items: center;
+            padding-top: 9vh;
 
             h1 {
                 display: none;
@@ -58,7 +59,7 @@ main {
                 padding-right: 20vw;                
             }
 
-            @keyframes fondo{
+           /*  @keyframes fondo{
                 0% {
                     background-image: url('../img/Fondos-principal/Diapositiva1.PNG');                                                         
                 }
@@ -74,7 +75,7 @@ main {
                 100% {
                     background-image: url('../img/Fondos-principal/Diapositiva1.PNG');
                 }
-            }
+            } */
 
             h1 {
                 display: none;
@@ -90,8 +91,8 @@ main {
         .secciones-marca {
             display: flex;
             justify-content: space-between;
-            width: 85vw;
-            font-size: 2rem;
+            width: 72.34%;
+            font-size: 1.5rem;
             color: white;
             text-align: center;
 
@@ -129,7 +130,7 @@ main {
     }
     
     #nosotros {
-        width: 85vw;
+        width: 77vw;
         height: 50vh;
         display: flex;
         justify-content: center;        
@@ -275,19 +276,20 @@ main {
     }
 
     #clientes {
-        width: 100vw;
+        width: 85vw;
         display: flex;
         justify-content: center;
-        justify-content: space-evenly;
-        padding-top: 15vh;
-        margin: auto;
+        align-items:center;
+        margin: 0vh auto;
+        padding-top: 10vh;
+        
 
-        .clientes, .experiencia {
-            
+        .clientes {            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-grow: 1;            
 
             .cara {
                 font-size: 10rem;
@@ -296,57 +298,20 @@ main {
 
             h4 {
                 font-size: 5rem;
-                color: black;
                 text-align: right;
                 font-family: $amatic;
                 padding: 1vw;
-            }
-            
-            p {
-                font-size: 3rem;
-                text-align: justify;
-                width: 25vw;
-                padding-top: 1.5vh;
-                padding-bottom: 3vh;
-            }
-
-            .comillas {
-                font-size: 3rem;
-            }
-
-            .imagenes-clientes {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-
-                img {
-                    width: 5vw;
-                    margin: 2vw;
-                    border-radius: 50%;
-                }
-            }           
-        }
+            }                    
+        }        
 
         .experiencia {
-            background-image: url('../img/Pijamadas/pijamadas21.png');
-            background-position: center;
-            background-size: cover;
-            width: 29.5vw;
-
-            p {
-                font-size: 5.5rem;
-                color: white;
-                text-align: right;
-                font-family: $amatic;
-                padding: 1vw;
-                background-color: rgba(0,0,0,0.6);
-
-            span {
-                font-family: $glamorous;
-                font-size: 5.5rem;
-                color: $color-6;              
-                }
-            }
+            
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            flex-grow: 1;
+            height: 90vh;                                    
+             
         }            
     }
 

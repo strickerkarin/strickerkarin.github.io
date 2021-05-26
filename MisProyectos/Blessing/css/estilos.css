@@ -194,13 +194,12 @@ main .marca {
 }
 
 main .marca .principal {
-  -webkit-animation: fondo 20s infinite;
-          animation: fondo 20s infinite;
-  width: 85vw;
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  margin-top: 5vh;
+  /* animation: fondo 20s infinite; */
+  width: 85%;
+  height: 97%;
+  /* background-size: cover;
+            background-position: center; */
+  /* margin-top: 5vh; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,6 +209,24 @@ main .marca .principal {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 9vh;
+  /*  @keyframes fondo{
+                0% {
+                    background-image: url('../img/Fondos-principal/Diapositiva1.PNG');                                                         
+                }
+                        
+                33% {
+                    background-image: url('../img/Fondos-principal/Diapositiva2.PNG');                                 
+                }
+
+                66% {
+                    background-image: url('../img/Fondos-principal/Diapositiva3.PNG');
+                }
+
+                100% {
+                    background-image: url('../img/Fondos-principal/Diapositiva1.PNG');
+                }
+            } */
 }
 
 main .marca .principal h1 {
@@ -220,36 +237,6 @@ main .marca .principal h1 {
   color: #f0eafb;
   padding-top: 20vh;
   padding-right: 20vw;
-}
-
-@-webkit-keyframes fondo {
-  0% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
-  33% {
-    background-image: url("../img/Fondos-principal/Diapositiva2.PNG");
-  }
-  66% {
-    background-image: url("../img/Fondos-principal/Diapositiva3.PNG");
-  }
-  100% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
-}
-
-@keyframes fondo {
-  0% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
-  33% {
-    background-image: url("../img/Fondos-principal/Diapositiva2.PNG");
-  }
-  66% {
-    background-image: url("../img/Fondos-principal/Diapositiva3.PNG");
-  }
-  100% {
-    background-image: url("../img/Fondos-principal/Diapositiva1.PNG");
-  }
 }
 
 main .marca .principal h1 {
@@ -269,8 +256,8 @@ main .marca .secciones-marca {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 85vw;
-  font-size: 2rem;
+  width: 72.34%;
+  font-size: 1.5rem;
   color: white;
   text-align: center;
 }
@@ -312,7 +299,7 @@ main .marca .secciones-marca .marca-pets {
 }
 
 main #nosotros {
-  width: 85vw;
+  width: 77vw;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,21 +523,21 @@ main #productos .productos .Ble .boton3:hover {
 }
 
 main #clientes {
-  width: 100vw;
+  width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 15vh;
-  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0vh auto;
+  padding-top: 10vh;
 }
 
-main #clientes .clientes, main #clientes .experiencia {
+main #clientes .clientes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,71 +551,35 @@ main #clientes .clientes, main #clientes .experiencia {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-main #clientes .clientes .cara, main #clientes .experiencia .cara {
+main #clientes .clientes .cara {
   font-size: 10rem;
   color: #907cc9;
 }
 
-main #clientes .clientes h4, main #clientes .experiencia h4 {
+main #clientes .clientes h4 {
   font-size: 5rem;
-  color: black;
   text-align: right;
   font-family: "Amatic SC", cursive;
   padding: 1vw;
-}
-
-main #clientes .clientes p, main #clientes .experiencia p {
-  font-size: 3rem;
-  text-align: justify;
-  width: 25vw;
-  padding-top: 1.5vh;
-  padding-bottom: 3vh;
-}
-
-main #clientes .clientes .comillas, main #clientes .experiencia .comillas {
-  font-size: 3rem;
-}
-
-main #clientes .clientes .imagenes-clientes, main #clientes .experiencia .imagenes-clientes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main #clientes .clientes .imagenes-clientes img, main #clientes .experiencia .imagenes-clientes img {
-  width: 5vw;
-  margin: 2vw;
-  border-radius: 50%;
 }
 
 main #clientes .experiencia {
-  background-image: url("../img/Pijamadas/pijamadas21.png");
-  background-position: center;
-  background-size: cover;
-  width: 29.5vw;
-}
-
-main #clientes .experiencia p {
-  font-size: 5.5rem;
-  color: white;
-  text-align: right;
-  font-family: "Amatic SC", cursive;
-  padding: 1vw;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-main #clientes .experiencia p span {
-  font-family: "simply-glamorous";
-  font-size: 5.5rem;
-  color: #27ccc4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 90vh;
 }
 
 main #contactanos {
@@ -718,7 +669,8 @@ main #contactanos .contactanos a i {
     margin: 0vh auto;
   }
   main .marca .principal {
-    margin-top: 2vh;
+    padding-top: 3vh;
+    height: 75%;
   }
   main #nosotros {
     margin: 0vh auto;
@@ -738,6 +690,22 @@ main #contactanos .contactanos a i {
   }
   main #clientes {
     margin: 0vh auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #clientes .experiencia {
+    height: 50vh;
+  }
+  main #clientes .experiencia video {
+    height: 45vh;
   }
   main #contactanos {
     width: 75vw;
@@ -761,7 +729,7 @@ main #contactanos .contactanos a i {
     font-size: 4px;
   }
   header {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     font-weight: bold;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -786,12 +754,14 @@ main #contactanos .contactanos a i {
   }
   main .marca {
     width: 95vw;
-    height: 35vh;
+    height: 45vh;
     margin: 0vh auto;
   }
   main .marca .principal {
     width: 95vw;
-    margin-top: 2vh;
+  }
+  main .marca .principal video {
+    width: 100%;
   }
   main .marca .secciones-marca {
     width: 95vw;
@@ -876,6 +846,11 @@ main #contactanos .contactanos a i {
     margin-top: 0vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    width: 100vw;
+  }
+  main #clientes .experiencia video {
+    width: 100%;
+    height: 115%;
   }
   main #contactanos {
     width: 95vw;

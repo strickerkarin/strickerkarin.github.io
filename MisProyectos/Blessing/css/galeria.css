@@ -18,7 +18,7 @@ body, html {
 }
 
 .parallax-content .parallax-section {
-  margin: 2vh 20vw;
+  margin: 2vh 15vw;
 }
 
 .parallax-content .parallax-section .parallax-img {
@@ -63,50 +63,50 @@ body, html {
 .parallax-content .grid-container-pij {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (10vw)[5];
-      grid-template-rows: repeat(5, 10vw);
-  -ms-grid-columns: (10vw)[5];
-      grid-template-columns: repeat(5, 10vw);
+  -ms-grid-rows: (12vw)[6];
+      grid-template-rows: repeat(6, 12vw);
+  -ms-grid-columns: (12vw)[5];
+      grid-template-columns: repeat(5, 12vw);
   grid-gap: 2.1vw;
   margin-right: auto;
 }
 
 .parallax-content .grid-container-pij img {
-  width: 10vw;
-  height: 10vw;
+  width: 12vw;
+  height: 12vw;
 }
 
 .parallax-content .grid-container-can {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (10vw)[3];
-      grid-template-rows: repeat(3, 10vw);
-  -ms-grid-columns: (10vw)[5];
-      grid-template-columns: repeat(5, 10vw);
+  -ms-grid-rows: (12vw)[4];
+      grid-template-rows: repeat(4, 12vw);
+  -ms-grid-columns: (12vw)[5];
+      grid-template-columns: repeat(5, 12vw);
   grid-gap: 2.1vw;
   margin-right: auto;
 }
 
 .parallax-content .grid-container-can img {
-  width: 10vw;
-  height: 10vw;
+  width: 12vw;
+  height: 12vw;
 }
 
 .parallax-content .grid-container-pet {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (10vw)[4];
-      grid-template-rows: repeat(4, 10vw);
-  -ms-grid-columns: (10vw)[5];
-      grid-template-columns: repeat(5, 10vw);
+  -ms-grid-rows: (12vw)[7];
+      grid-template-rows: repeat(7, 12vw);
+  -ms-grid-columns: (12vw)[5];
+      grid-template-columns: repeat(5, 12vw);
   grid-gap: 2.1vw;
   margin-right: auto;
   margin-bottom: 15vh;
 }
 
 .parallax-content .grid-container-pet img {
-  width: 10vw;
-  height: 10vw;
+  width: 12vw;
+  height: 12vw;
 }
 
 .parallax-content .grid-item1, .parallax-content .grid-item2, .parallax-content .grid-item3,
@@ -129,7 +129,15 @@ body, html {
 .parallax-content .grid-item52, .parallax-content .grid-item53, .parallax-content .grid-item53,
 .parallax-content .grid-item54, .parallax-content .grid-item55, .parallax-content .grid-item56,
 .parallax-content .grid-item57, .parallax-content .grid-item58, .parallax-content .grid-item59,
-.parallax-content .grid-item60 {
+.parallax-content .grid-item60, .parallax-content .grid-item61, .parallax-content .grid-item62,
+.parallax-content .grid-item63, .parallax-content .grid-item64, .parallax-content .grid-item65,
+.parallax-content .grid-item66, .parallax-content .grid-item67, .parallax-content .grid-item68,
+.parallax-content .grid-item69, .parallax-content .grid-item70, .parallax-content .grid-item71,
+.parallax-content .grid-item72, .parallax-content .grid-item73, .parallax-content .grid-item74,
+.parallax-content .grid-item75, .parallax-content .grid-item76, .parallax-content .grid-item77,
+.parallax-content .grid-item78, .parallax-content .grid-item79, .parallax-content .grid-item80,
+.parallax-content .grid-item81, .parallax-content .grid-item82, .parallax-content .grid-item83,
+.parallax-content .grid-item84, .parallax-content .grid-item85 {
   -webkit-box-shadow: 2px 2px 20px;
           box-shadow: 2px 2px 20px;
   -webkit-transition: all 0.5s;
@@ -158,7 +166,15 @@ body, html {
 .parallax-content .grid-item52:hover, .parallax-content .grid-item53:hover, .parallax-content .grid-item53:hover,
 .parallax-content .grid-item54:hover, .parallax-content .grid-item55:hover, .parallax-content .grid-item56:hover,
 .parallax-content .grid-item57:hover, .parallax-content .grid-item58:hover, .parallax-content .grid-item59:hover,
-.parallax-content .grid-item60:hover {
+.parallax-content .grid-item60:hover, .parallax-content .grid-item61:hover, .parallax-content .grid-item62:hover,
+.parallax-content .grid-item63:hover, .parallax-content .grid-item64:hover, .parallax-content .grid-item65:hover,
+.parallax-content .grid-item66:hover, .parallax-content .grid-item67:hover, .parallax-content .grid-item68:hover,
+.parallax-content .grid-item69:hover, .parallax-content .grid-item70:hover, .parallax-content .grid-item71:hover,
+.parallax-content .grid-item72:hover, .parallax-content .grid-item73:hover, .parallax-content .grid-item74:hover,
+.parallax-content .grid-item75:hover, .parallax-content .grid-item76:hover, .parallax-content .grid-item77:hover,
+.parallax-content .grid-item78:hover, .parallax-content .grid-item79:hover, .parallax-content .grid-item80:hover,
+.parallax-content .grid-item81:hover, .parallax-content .grid-item82:hover, .parallax-content .grid-item83:hover,
+.parallax-content .grid-item84:hover, .parallax-content .grid-item85:hover {
   -webkit-transform: scale(2.5);
           transform: scale(2.5);
 }
@@ -401,6 +417,106 @@ body, html {
 
 .parallax-content .grid-item60 {
   background-image: url("../img/Pets/pets9.png");
+}
+
+.parallax-content .grid-item61 {
+  background-image: url("../img/Pijamadas/z1.jpeg");
+}
+
+.parallax-content .grid-item62 {
+  background-image: url("../img/Pijamadas/z2.jpeg");
+}
+
+.parallax-content .grid-item63 {
+  background-image: url("../img/Pijamadas/z3.jpeg");
+}
+
+.parallax-content .grid-item64 {
+  background-image: url("../img/Pijamadas/z4.jpeg");
+}
+
+.parallax-content .grid-item65 {
+  background-image: url("../img/Pijamadas/z6.jpeg");
+}
+
+.parallax-content .grid-item66 {
+  background-image: url("../img/Candies/C2.png");
+}
+
+.parallax-content .grid-item67 {
+  background-image: url("../img/Candies/C8.jpeg");
+}
+
+.parallax-content .grid-item68 {
+  background-image: url("../img/Candies/z1.jpeg");
+}
+
+.parallax-content .grid-item69 {
+  background-image: url("../img/Candies/C3.jpeg");
+}
+
+.parallax-content .grid-item70 {
+  background-image: url("../img/Candies/C11.png");
+}
+
+.parallax-content .grid-item71 {
+  background-image: url("../img/Pets/z2.jpeg");
+}
+
+.parallax-content .grid-item72 {
+  background-image: url("../img/Pets/z4.jpeg");
+}
+
+.parallax-content .grid-item73 {
+  background-image: url("../img/Pets/z6.jpeg");
+}
+
+.parallax-content .grid-item74 {
+  background-image: url("../img/Pets/z7.jpeg");
+}
+
+.parallax-content .grid-item75 {
+  background-image: url("../img/Pets/z9.jpeg");
+}
+
+.parallax-content .grid-item76 {
+  background-image: url("../img/Pets/z10.jpeg");
+}
+
+.parallax-content .grid-item77 {
+  background-image: url("../img/Pets/z11.jpeg");
+}
+
+.parallax-content .grid-item78 {
+  background-image: url("../img/Pets/z12.jpeg");
+}
+
+.parallax-content .grid-item79 {
+  background-image: url("../img/Pets/z22.jpeg");
+}
+
+.parallax-content .grid-item80 {
+  background-image: url("../img/Pets/z14.jpeg");
+}
+
+.parallax-content .grid-item81 {
+  background-image: url("../img/Pets/z15.jpeg");
+}
+
+.parallax-content .grid-item82 {
+  background-image: url("../img/Pets/z16.jpeg");
+}
+
+.parallax-content .grid-item83 {
+  background-image: url("../img/Pets/z17.jpeg");
+}
+
+.parallax-content .grid-item84 {
+  background-image: url("../img/Pets/z18.jpeg");
+}
+
+.parallax-content .grid-item85 {
+  background-image: url("../img/Pets/z21.jpeg");
 }
 
 @media screen and (max-width: 768px) {
