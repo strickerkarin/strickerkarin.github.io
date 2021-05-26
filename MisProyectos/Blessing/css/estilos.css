@@ -729,7 +729,7 @@ main #contactanos .contactanos a i {
     font-size: 4px;
   }
   header {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -854,6 +854,9 @@ main #contactanos .contactanos a i {
   }
   main #contactanos {
     width: 95vw;
+  }
+  footer .pie a img {
+    width: 5vw;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
