@@ -24,7 +24,8 @@ body, html {
         pre {
             font-size:3rem;
             background-color: rgba(255,255,255,0.5);
-            width: 90%;
+            width: 70%;
+            margin: 0vh auto;
         }
 
         img {
@@ -180,49 +181,13 @@ body, html {
                 background-size: 100%;
                         
             }        
-        }
-
-        .grid-container-pij {
-            grid-template-rows: repeat(5, 17vw);
-            grid-template-columns: repeat(5,17vw);
-            grid-gap: 2.5vw;
-                
-            img {
-                width: 17vw;
-                height: 17vw;
-            }
-        }
-        
-        .grid-container-can {
-            grid-template-rows: repeat(3, 17vw);
-            grid-template-columns: repeat(5,17vw);
-            grid-gap: 2.5vw;
-                        
-            
-            img {
-                width: 17vw;
-                height: 17vw;
-            }
-        } 
-
-        .grid-container-pet {
-            
-            grid-template-rows: repeat(4, 17vw);
-            grid-template-columns: repeat(5,17vw);
-            grid-gap: 2.5vw;
-                            
-            
-            img {
-                width: 17vw;
-                height: 17vw;
-            }
-        }
+        }                            
     }
 }
 
 @media screen and (max-width: 460px) {
     html {
-        font-size: 3.1px;        
+        font-size: 3px;        
     }
 
     header {
@@ -251,34 +216,35 @@ body, html {
             font-size: 7rem;
             
         } 
+
+        .info-pijamadas, .info-can, .info-pet {
+                      
     
-        .grid-item1, .grid-item2, .grid-item3, 
-        .grid-item4, .grid-item5, .grid-item6, 
-        .grid-item7, .grid-item8, .grid-item9,
-        .grid-item10, .grid-item11, .grid-item12,
-        .grid-item13, .grid-item14, .grid-item15,
-        .grid-item16, .grid-item17, .grid-item18,
-        .grid-item19, .grid-item20, .grid-item21,
-        .grid-item22, .grid-item23, .grid-item24,
-        .grid-item25, .grid-item26, .grid-item27,
-        .grid-item28, .grid-item29, .grid-item30,
-        .grid-item31, .grid-item32, .grid-item33,
-        .grid-item34, .grid-item35, .grid-item36,
-        .grid-item37, .grid-item38, .grid-item39,
-        .grid-item40, .grid-item41, .grid-item42,
-        .grid-item43, .grid-item44, .grid-item45,
-        .grid-item46, .grid-item47, .grid-item48,
-        .grid-item49, .grid-item50, .grid-item51,
-        .grid-item52, .grid-item53, .grid-item53,
-        .grid-item54, .grid-item55, .grid-item56,
-        .grid-item57, .grid-item58, .grid-item59,
-        .grid-item60 {
-            box-shadow:2px 2px 5px;
-            transition: all 0.4s;
-            
-            &:hover {
-                transform: scale(3.5);
+            h4 {
+                font-size: 6rem;
+                padding: 1vh 0vw;
+            }
+            pre {
+                width: 97%;
+                font-size:4.4rem;   
+                font-weight: bold;             
             }
         }
+         
+        .sexta, .septima, .octava, 
+        .novena, .decima, .decima1,
+        .decima2, .decima3, .decima4 {
+            display: none;
+        }     
+        
+        .info-entrega{
+        
+            font-size: 4.5rem;
+            font-weight: bold;
+           
+            
+        }
+    
+       
     }
 }
