@@ -261,15 +261,33 @@ main {
                 }
 
                 .boton1 {
-                @include boton($color-6,10vw);                
+                @include boton($color-6,10vw); 
+                    a{
+                        text-decoration: none;
+                        &:visited {
+                            color: white;
+                        }
+                    }               
                 }
 
                 .boton2 {
-                    @include boton($color-5,10vw);                    
+                    @include boton($color-5,10vw);
+                    a{
+                        text-decoration: none;
+                        &:visited {
+                            color: white;
+                        }
+                    }                     
                 }
 
                 .boton3 {
-                    @include boton($color-7,10vw);                    
+                    @include boton($color-7,10vw);
+                    a{
+                        text-decoration: none;
+                        &:visited {
+                            color: white;
+                        }
+                    }                     
                 }
             }
         }          

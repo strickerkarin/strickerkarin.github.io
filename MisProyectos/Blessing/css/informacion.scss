@@ -1,0 +1,284 @@
+body, html {
+    overflow-x: hidden;       
+} 
+
+.parallax-content { 
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    perspective: 0.9px;
+    
+
+    .info-pijamadas, .info-can, .info-pet {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        h4 {
+            font-size: 4rem;
+            text-align:center;
+            padding: 4vh 0vw;
+        }
+        pre {
+            font-size:3rem;
+            background-color: rgba(255,255,255,0.5);
+            width: 90%;
+        }
+
+        img {
+            width: 40%;
+            margin: 2vh auto;
+        }
+    }
+    
+  
+    .titulo {
+        font-size: 5rem;
+        text-align: center;
+        margin: 8vh 0vw;
+    }   
+    
+    .info-entrega{
+        
+        font-size: 3rem;
+        text-align: center;
+        background-color: rgba(255,255,255,0.5);
+        width: 90%;
+        
+    }
+
+    .parallax-section {
+        margin: 2vh 15vw;
+
+        .parallax-img {
+            position: absolute;
+            top: 0vh;
+            right: 0;
+            left: 0;
+            transform: translateZ(-1px) scale(3.5);
+            background-size: 100%;
+            z-index: -1;
+            margin: auto;                      
+        }
+        
+        .segunda {
+            top:100vh;            
+        }
+
+        .tercera {
+            top:300vh;
+        }
+
+        .cuarta {
+            top: 400vh;
+        }
+
+        .quinta {
+            top: 500vh;
+        }
+
+        .sexta {
+            top: 600vh;
+        }
+
+        .septima {
+            top: 700vh;
+        }
+
+        .octava {
+            top: 800vh;
+        }
+
+        .novena {
+            top: 900vh;
+        }
+
+        .decima {
+            top: 1000vh;
+        }
+        .decima1 {
+            top: 1100vh;
+        }
+        .decima2 {
+            top: 1200vh;
+        }
+        .decima3 {
+            top: 1300vh;
+        }
+        .decima4 {
+            top: 1400vh;
+        }
+    }
+
+    .inicio {        
+        background-color: #27ccc4;
+        font-size: 3rem;
+        text-align: center;
+        border-radius: 35px;
+        color: white;
+        transition: all 0.4s;
+        width: 16vw;
+        margin: 0vh auto 5vh;
+        padding: 0.5vh 0vh;
+
+        &:hover {
+        transform: scale(1.3);
+        }
+        
+        a {
+            text-decoration: none;
+
+            &:visited {
+            color: white;
+            }         
+        }       
+    }
+
+    
+    
+    
+
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 3.3rem;
+        font-weight: bold;
+        
+        
+        .horarios {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .parallax-content {
+        
+        .titulo {
+            font-size: 5rem;
+            text-align: center;
+            margin: 4vh 0vw;
+        }  
+
+        .inicio {
+            font-size: 4rem;
+            width: 20vw;
+        }
+    
+        .parallax-section {
+
+            margin-left: auto;
+            padding-left: 2vw;
+               
+            .parallax-img {
+        
+                transform: translateZ(-1px) scale(2);
+                background-size: 100%;
+                        
+            }        
+        }
+
+        .grid-container-pij {
+            grid-template-rows: repeat(5, 17vw);
+            grid-template-columns: repeat(5,17vw);
+            grid-gap: 2.5vw;
+                
+            img {
+                width: 17vw;
+                height: 17vw;
+            }
+        }
+        
+        .grid-container-can {
+            grid-template-rows: repeat(3, 17vw);
+            grid-template-columns: repeat(5,17vw);
+            grid-gap: 2.5vw;
+                        
+            
+            img {
+                width: 17vw;
+                height: 17vw;
+            }
+        } 
+
+        .grid-container-pet {
+            
+            grid-template-rows: repeat(4, 17vw);
+            grid-template-columns: repeat(5,17vw);
+            grid-gap: 2.5vw;
+                            
+            
+            img {
+                width: 17vw;
+                height: 17vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    html {
+        font-size: 3.1px;        
+    }
+
+    header {
+        font-size: 3.8rem;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+    .parallax-content {
+        .inicio {
+            font-size: 4rem;
+            width: 25vw;
+        }  
+
+        section .logo {
+
+            width: 30vw;
+            margin: 0vh auto;
+
+            img {
+                width: 30vw;
+            }
+        }
+        
+        .titulo {
+            font-size: 7rem;
+            
+        } 
+    
+        .grid-item1, .grid-item2, .grid-item3, 
+        .grid-item4, .grid-item5, .grid-item6, 
+        .grid-item7, .grid-item8, .grid-item9,
+        .grid-item10, .grid-item11, .grid-item12,
+        .grid-item13, .grid-item14, .grid-item15,
+        .grid-item16, .grid-item17, .grid-item18,
+        .grid-item19, .grid-item20, .grid-item21,
+        .grid-item22, .grid-item23, .grid-item24,
+        .grid-item25, .grid-item26, .grid-item27,
+        .grid-item28, .grid-item29, .grid-item30,
+        .grid-item31, .grid-item32, .grid-item33,
+        .grid-item34, .grid-item35, .grid-item36,
+        .grid-item37, .grid-item38, .grid-item39,
+        .grid-item40, .grid-item41, .grid-item42,
+        .grid-item43, .grid-item44, .grid-item45,
+        .grid-item46, .grid-item47, .grid-item48,
+        .grid-item49, .grid-item50, .grid-item51,
+        .grid-item52, .grid-item53, .grid-item53,
+        .grid-item54, .grid-item55, .grid-item56,
+        .grid-item57, .grid-item58, .grid-item59,
+        .grid-item60 {
+            box-shadow:2px 2px 5px;
+            transition: all 0.4s;
+            
+            &:hover {
+                transform: scale(3.5);
+            }
+        }
+    }
+}

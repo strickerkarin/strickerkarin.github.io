@@ -1,0 +1,288 @@
+body, html {
+  overflow-x: hidden;
+}
+
+.parallax-content {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 0.9px;
+          perspective: 0.9px;
+}
+
+.parallax-content .info-pijamadas, .parallax-content .info-can, .parallax-content .info-pet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.parallax-content .info-pijamadas h4, .parallax-content .info-can h4, .parallax-content .info-pet h4 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 4vh 0vw;
+}
+
+.parallax-content .info-pijamadas pre, .parallax-content .info-can pre, .parallax-content .info-pet pre {
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 90%;
+}
+
+.parallax-content .info-pijamadas img, .parallax-content .info-can img, .parallax-content .info-pet img {
+  width: 40%;
+  margin: 2vh auto;
+}
+
+.parallax-content .titulo {
+  font-size: 5rem;
+  text-align: center;
+  margin: 8vh 0vw;
+}
+
+.parallax-content .info-entrega {
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 90%;
+}
+
+.parallax-content .parallax-section {
+  margin: 2vh 15vw;
+}
+
+.parallax-content .parallax-section .parallax-img {
+  position: absolute;
+  top: 0vh;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateZ(-1px) scale(3.5);
+          transform: translateZ(-1px) scale(3.5);
+  background-size: 100%;
+  z-index: -1;
+  margin: auto;
+}
+
+.parallax-content .parallax-section .segunda {
+  top: 100vh;
+}
+
+.parallax-content .parallax-section .tercera {
+  top: 300vh;
+}
+
+.parallax-content .parallax-section .cuarta {
+  top: 400vh;
+}
+
+.parallax-content .parallax-section .quinta {
+  top: 500vh;
+}
+
+.parallax-content .parallax-section .sexta {
+  top: 600vh;
+}
+
+.parallax-content .parallax-section .septima {
+  top: 700vh;
+}
+
+.parallax-content .parallax-section .octava {
+  top: 800vh;
+}
+
+.parallax-content .parallax-section .novena {
+  top: 900vh;
+}
+
+.parallax-content .parallax-section .decima {
+  top: 1000vh;
+}
+
+.parallax-content .parallax-section .decima1 {
+  top: 1100vh;
+}
+
+.parallax-content .parallax-section .decima2 {
+  top: 1200vh;
+}
+
+.parallax-content .parallax-section .decima3 {
+  top: 1300vh;
+}
+
+.parallax-content .parallax-section .decima4 {
+  top: 1400vh;
+}
+
+.parallax-content .inicio {
+  background-color: #27ccc4;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 35px;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 16vw;
+  margin: 0vh auto 5vh;
+  padding: 0.5vh 0vh;
+}
+
+.parallax-content .inicio:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.parallax-content .inicio a {
+  text-decoration: none;
+}
+
+.parallax-content .inicio a:visited {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 3.3rem;
+    font-weight: bold;
+  }
+  header .horarios span {
+    display: none;
+  }
+  .parallax-content .titulo {
+    font-size: 5rem;
+    text-align: center;
+    margin: 4vh 0vw;
+  }
+  .parallax-content .inicio {
+    font-size: 4rem;
+    width: 20vw;
+  }
+  .parallax-content .parallax-section {
+    margin-left: auto;
+    padding-left: 2vw;
+  }
+  .parallax-content .parallax-section .parallax-img {
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+    background-size: 100%;
+  }
+  .parallax-content .grid-container-pij {
+    -ms-grid-rows: (17vw)[5];
+        grid-template-rows: repeat(5, 17vw);
+    -ms-grid-columns: (17vw)[5];
+        grid-template-columns: repeat(5, 17vw);
+    grid-gap: 2.5vw;
+  }
+  .parallax-content .grid-container-pij img {
+    width: 17vw;
+    height: 17vw;
+  }
+  .parallax-content .grid-container-can {
+    -ms-grid-rows: (17vw)[3];
+        grid-template-rows: repeat(3, 17vw);
+    -ms-grid-columns: (17vw)[5];
+        grid-template-columns: repeat(5, 17vw);
+    grid-gap: 2.5vw;
+  }
+  .parallax-content .grid-container-can img {
+    width: 17vw;
+    height: 17vw;
+  }
+  .parallax-content .grid-container-pet {
+    -ms-grid-rows: (17vw)[4];
+        grid-template-rows: repeat(4, 17vw);
+    -ms-grid-columns: (17vw)[5];
+        grid-template-columns: repeat(5, 17vw);
+    grid-gap: 2.5vw;
+  }
+  .parallax-content .grid-container-pet img {
+    width: 17vw;
+    height: 17vw;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 3.1px;
+  }
+  header {
+    font-size: 3.8rem;
+    font-weight: bold;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .parallax-content .inicio {
+    font-size: 4rem;
+    width: 25vw;
+  }
+  .parallax-content section .logo {
+    width: 30vw;
+    margin: 0vh auto;
+  }
+  .parallax-content section .logo img {
+    width: 30vw;
+  }
+  .parallax-content .titulo {
+    font-size: 7rem;
+  }
+  .parallax-content .grid-item1, .parallax-content .grid-item2, .parallax-content .grid-item3,
+  .parallax-content .grid-item4, .parallax-content .grid-item5, .parallax-content .grid-item6,
+  .parallax-content .grid-item7, .parallax-content .grid-item8, .parallax-content .grid-item9,
+  .parallax-content .grid-item10, .parallax-content .grid-item11, .parallax-content .grid-item12,
+  .parallax-content .grid-item13, .parallax-content .grid-item14, .parallax-content .grid-item15,
+  .parallax-content .grid-item16, .parallax-content .grid-item17, .parallax-content .grid-item18,
+  .parallax-content .grid-item19, .parallax-content .grid-item20, .parallax-content .grid-item21,
+  .parallax-content .grid-item22, .parallax-content .grid-item23, .parallax-content .grid-item24,
+  .parallax-content .grid-item25, .parallax-content .grid-item26, .parallax-content .grid-item27,
+  .parallax-content .grid-item28, .parallax-content .grid-item29, .parallax-content .grid-item30,
+  .parallax-content .grid-item31, .parallax-content .grid-item32, .parallax-content .grid-item33,
+  .parallax-content .grid-item34, .parallax-content .grid-item35, .parallax-content .grid-item36,
+  .parallax-content .grid-item37, .parallax-content .grid-item38, .parallax-content .grid-item39,
+  .parallax-content .grid-item40, .parallax-content .grid-item41, .parallax-content .grid-item42,
+  .parallax-content .grid-item43, .parallax-content .grid-item44, .parallax-content .grid-item45,
+  .parallax-content .grid-item46, .parallax-content .grid-item47, .parallax-content .grid-item48,
+  .parallax-content .grid-item49, .parallax-content .grid-item50, .parallax-content .grid-item51,
+  .parallax-content .grid-item52, .parallax-content .grid-item53, .parallax-content .grid-item53,
+  .parallax-content .grid-item54, .parallax-content .grid-item55, .parallax-content .grid-item56,
+  .parallax-content .grid-item57, .parallax-content .grid-item58, .parallax-content .grid-item59,
+  .parallax-content .grid-item60 {
+    -webkit-box-shadow: 2px 2px 5px;
+            box-shadow: 2px 2px 5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .parallax-content .grid-item1:hover, .parallax-content .grid-item2:hover, .parallax-content .grid-item3:hover,
+  .parallax-content .grid-item4:hover, .parallax-content .grid-item5:hover, .parallax-content .grid-item6:hover,
+  .parallax-content .grid-item7:hover, .parallax-content .grid-item8:hover, .parallax-content .grid-item9:hover,
+  .parallax-content .grid-item10:hover, .parallax-content .grid-item11:hover, .parallax-content .grid-item12:hover,
+  .parallax-content .grid-item13:hover, .parallax-content .grid-item14:hover, .parallax-content .grid-item15:hover,
+  .parallax-content .grid-item16:hover, .parallax-content .grid-item17:hover, .parallax-content .grid-item18:hover,
+  .parallax-content .grid-item19:hover, .parallax-content .grid-item20:hover, .parallax-content .grid-item21:hover,
+  .parallax-content .grid-item22:hover, .parallax-content .grid-item23:hover, .parallax-content .grid-item24:hover,
+  .parallax-content .grid-item25:hover, .parallax-content .grid-item26:hover, .parallax-content .grid-item27:hover,
+  .parallax-content .grid-item28:hover, .parallax-content .grid-item29:hover, .parallax-content .grid-item30:hover,
+  .parallax-content .grid-item31:hover, .parallax-content .grid-item32:hover, .parallax-content .grid-item33:hover,
+  .parallax-content .grid-item34:hover, .parallax-content .grid-item35:hover, .parallax-content .grid-item36:hover,
+  .parallax-content .grid-item37:hover, .parallax-content .grid-item38:hover, .parallax-content .grid-item39:hover,
+  .parallax-content .grid-item40:hover, .parallax-content .grid-item41:hover, .parallax-content .grid-item42:hover,
+  .parallax-content .grid-item43:hover, .parallax-content .grid-item44:hover, .parallax-content .grid-item45:hover,
+  .parallax-content .grid-item46:hover, .parallax-content .grid-item47:hover, .parallax-content .grid-item48:hover,
+  .parallax-content .grid-item49:hover, .parallax-content .grid-item50:hover, .parallax-content .grid-item51:hover,
+  .parallax-content .grid-item52:hover, .parallax-content .grid-item53:hover, .parallax-content .grid-item53:hover,
+  .parallax-content .grid-item54:hover, .parallax-content .grid-item55:hover, .parallax-content .grid-item56:hover,
+  .parallax-content .grid-item57:hover, .parallax-content .grid-item58:hover, .parallax-content .grid-item59:hover,
+  .parallax-content .grid-item60:hover {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+  }
+}
+/*# sourceMappingURL=informacion.css.map */
