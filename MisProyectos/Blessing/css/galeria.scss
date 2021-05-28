@@ -133,8 +133,7 @@ body, html {
         box-shadow:2px 2px 20px;
         transition: all 0.5s;
         background-size: cover;
-        background-position: center;
-        
+        background-position: center;        
 
         &:hover {
             transform: scale(2.5);
@@ -395,17 +394,13 @@ body, html {
     } 
     .grid-item85 {
         background-image: url('../img/Pets/z21.jpeg');
-    } 
-    
-
-
+    }   
 }
 
 @media screen and (max-width: 768px) {
     header {
         font-size: 3.3rem;
-        font-weight: bold;
-        
+        font-weight: bold;        
         
         .horarios {
             span {
@@ -414,8 +409,7 @@ body, html {
         }
     }
 
-    .parallax-content {
-        
+    .parallax-content {        
         
         .titulo {
             font-size: 5rem;
@@ -429,15 +423,12 @@ body, html {
         }
     
         .parallax-section {
-
             padding-left: 0vw;
             margin-left: 14.5vw;
                
-            .parallax-img {
-        
+            .parallax-img {        
                 transform: translateZ(-1px) scale(2);
-                background-size: 100%;
-                        
+                background-size: 100%;                        
             }        
 
             .tercera {
@@ -448,8 +439,7 @@ body, html {
         .grid-container-pij {
             grid-template-rows: repeat(7, 16vw);
             grid-template-columns: repeat(4,16vw);
-            grid-gap: 2.1vw;
-            
+            grid-gap: 2.1vw;           
                 
             img {
                 width: 16vw;
@@ -460,8 +450,7 @@ body, html {
         .grid-container-can {
             grid-template-rows: repeat(4, 16vw);
             grid-template-columns: repeat(4,16vw);
-            grid-gap: 2.1vw;
-                        
+            grid-gap: 2.1vw;                        
             
             img {
                 width: 16vw;
@@ -469,12 +458,10 @@ body, html {
             }
         } 
 
-        .grid-container-pet {
-            
+        .grid-container-pet {            
             grid-template-rows: repeat(7, 16vw);
             grid-template-columns: repeat(4,16vw);
-            grid-gap: 2.1vw;
-                            
+            grid-gap: 2.1vw;                            
             
             img {
                 width: 16vw;
@@ -512,8 +499,7 @@ body, html {
         }
         
         .titulo {
-            font-size: 7rem;
-            
+            font-size: 7rem;            
         } 
     
         .grid-item1, .grid-item2, .grid-item3, 
@@ -545,8 +531,7 @@ body, html {
             }
         }
 
-        .parallax-section {                      
-                 
+        .parallax-section {                     
             .segunda {
                 display: none;
             }

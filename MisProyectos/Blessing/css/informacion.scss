@@ -7,61 +7,57 @@ body, html {
     width: 100vw;
     overflow-x: hidden; 
     overflow-y: auto; 
-    perspective: 0.9px;
-    
+    perspective: 0.9px;    
 
     .info-pijamadas, .info-can, .info-pet {
         display:flex;
         flex-direction: column;
-        justify-content: center;
-        
+        justify-content: center;        
 
         h4 {
             font-size: 4rem;
             text-align:center;
             padding: 4vh 0vw;
         }
-        pre {
-            font-size:3rem;
+        .parrafo{
             background-color: rgba(255,255,255,0.5);
-            width: 70%;
+            font-size: 3rem;
             margin: 0vh auto;
+            width: 70%;
         }
 
         img {
-            width: 40%;
             margin: 2vh auto;
+            width: 40%;
         }
-    }
-    
+    }    
   
     .titulo {
         font-size: 5rem;
-        text-align: center;
         margin: 8vh 0vw;
+        text-align: center;
     }   
     
     .info-entrega{
-        
-        font-size: 3rem;
-        text-align: center;
         background-color: rgba(255,255,255,0.5);
-        width: 90%;
-        
+        font-size: 3rem;
+        margin: 2vh 5vw;
+        text-align: center;
+        width: 90%;        
     }
 
     .parallax-section {
-        margin: 2vh 15vw;
+        margin: 2vh 20vw;
 
         .parallax-img {
-            position: absolute;
-            top: 0vh;
-            right: 0;
-            left: 0;
-            transform: translateZ(-1px) scale(3.5);
             background-size: 100%;
-            z-index: -1;
+            left: 0;
             margin: auto;                      
+            position: absolute;
+            right: 0;
+            top: 0vh;
+            transform: translateZ(-1px) scale(3.5);
+            z-index: -1;
         }
         
         .segunda {
@@ -115,14 +111,14 @@ body, html {
 
     .inicio {        
         background-color: #27ccc4;
-        font-size: 3rem;
-        text-align: center;
         border-radius: 35px;
         color: white;
-        transition: all 0.4s;
-        width: 16vw;
+        font-size: 3rem;
         margin: 0vh auto 5vh;
+        text-align: center;
+        transition: all 0.4s;
         padding: 0.5vh 0vh;
+        width: 16vw;
 
         &:hover {
         transform: scale(1.3);
@@ -135,21 +131,14 @@ body, html {
             color: white;
             }         
         }       
-    }
-
-    
-    
-    
-
-
+    }    
 }
 
 @media screen and (max-width: 768px) {
     header {
         font-size: 3.3rem;
         font-weight: bold;
-        
-        
+                
         .horarios {
             span {
                 display: none;
@@ -160,7 +149,6 @@ body, html {
     .parallax-content {
         
         .titulo {
-            font-size: 5rem;
             text-align: center;
             margin: 4vh 0vw;
         }  
@@ -171,17 +159,30 @@ body, html {
         }
     
         .parallax-section {
-
             margin-left: auto;
             padding-left: 2vw;
+            
+            .parrafo {
+                font-size: 7rem;
+            }
                
             .parallax-img {
-        
                 transform: translateZ(-1px) scale(2);
                 background-size: 100%;
                         
             }        
-        }                            
+        }
+        
+        .info-pijamadas, .info-can, .info-pet {
+            .parrafo{
+                font-size:3.5rem;
+            }
+        }
+
+        .decima, .decima1,
+        .decima2, .decima3, .decima4 {
+            display: none;
+        } 
     }
 }
 
@@ -203,7 +204,6 @@ body, html {
         }  
 
         section .logo {
-
             width: 30vw;
             margin: 0vh auto;
 
@@ -213,38 +213,33 @@ body, html {
         }
         
         .titulo {
-            font-size: 7rem;
-            
+            font-size: 7rem;           
         } 
 
-        .info-pijamadas, .info-can, .info-pet {
-                      
-    
+        .info-pijamadas, .info-can, .info-pet {                 
             h4 {
-                font-size: 6rem;
+                font-size: 8rem;
                 padding: 1vh 0vw;
             }
-            pre {
-                width: 97%;
-                font-size:4.4rem;   
+            .parrafo {
+                width: 90%;
+                font-size:6rem;   
                 font-weight: bold;             
             }
         }
          
-        .sexta, .septima, .octava, 
-        .novena, .decima, .decima1,
+        .octava, .novena, .decima, .decima1,
         .decima2, .decima3, .decima4 {
             display: none;
         }     
         
         .info-entrega{
-        
-            font-size: 4.5rem;
-            font-weight: bold;
-           
-            
+            font-size: 6rem;
+            font-weight: bold;         
         }
-    
-       
+
+        .titulo {
+            font-size: 9rem;           
+        }    
     }
 }

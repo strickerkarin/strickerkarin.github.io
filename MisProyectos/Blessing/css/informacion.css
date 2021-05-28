@@ -30,45 +30,46 @@ body, html {
   padding: 4vh 0vw;
 }
 
-.parallax-content .info-pijamadas pre, .parallax-content .info-can pre, .parallax-content .info-pet pre {
-  font-size: 3rem;
+.parallax-content .info-pijamadas .parrafo, .parallax-content .info-can .parrafo, .parallax-content .info-pet .parrafo {
   background-color: rgba(255, 255, 255, 0.5);
-  width: 70%;
+  font-size: 3rem;
   margin: 0vh auto;
+  width: 70%;
 }
 
 .parallax-content .info-pijamadas img, .parallax-content .info-can img, .parallax-content .info-pet img {
-  width: 40%;
   margin: 2vh auto;
+  width: 40%;
 }
 
 .parallax-content .titulo {
   font-size: 5rem;
-  text-align: center;
   margin: 8vh 0vw;
+  text-align: center;
 }
 
 .parallax-content .info-entrega {
-  font-size: 3rem;
-  text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
+  font-size: 3rem;
+  margin: 2vh 5vw;
+  text-align: center;
   width: 90%;
 }
 
 .parallax-content .parallax-section {
-  margin: 2vh 15vw;
+  margin: 2vh 20vw;
 }
 
 .parallax-content .parallax-section .parallax-img {
-  position: absolute;
-  top: 0vh;
-  right: 0;
+  background-size: 100%;
   left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0vh;
   -webkit-transform: translateZ(-1px) scale(3.5);
           transform: translateZ(-1px) scale(3.5);
-  background-size: 100%;
   z-index: -1;
-  margin: auto;
 }
 
 .parallax-content .parallax-section .segunda {
@@ -125,15 +126,15 @@ body, html {
 
 .parallax-content .inicio {
   background-color: #27ccc4;
-  font-size: 3rem;
-  text-align: center;
   border-radius: 35px;
   color: white;
+  font-size: 3rem;
+  margin: 0vh auto 5vh;
+  text-align: center;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  width: 16vw;
-  margin: 0vh auto 5vh;
   padding: 0.5vh 0vh;
+  width: 16vw;
 }
 
 .parallax-content .inicio:hover {
@@ -158,7 +159,6 @@ body, html {
     display: none;
   }
   .parallax-content .titulo {
-    font-size: 5rem;
     text-align: center;
     margin: 4vh 0vw;
   }
@@ -170,10 +170,20 @@ body, html {
     margin-left: auto;
     padding-left: 2vw;
   }
+  .parallax-content .parallax-section .parrafo {
+    font-size: 7rem;
+  }
   .parallax-content .parallax-section .parallax-img {
     -webkit-transform: translateZ(-1px) scale(2);
             transform: translateZ(-1px) scale(2);
     background-size: 100%;
+  }
+  .parallax-content .info-pijamadas .parrafo, .parallax-content .info-can .parrafo, .parallax-content .info-pet .parrafo {
+    font-size: 3.5rem;
+  }
+  .parallax-content .decima, .parallax-content .decima1,
+  .parallax-content .decima2, .parallax-content .decima3, .parallax-content .decima4 {
+    display: none;
   }
 }
 
@@ -203,22 +213,24 @@ body, html {
     font-size: 7rem;
   }
   .parallax-content .info-pijamadas h4, .parallax-content .info-can h4, .parallax-content .info-pet h4 {
-    font-size: 6rem;
+    font-size: 8rem;
     padding: 1vh 0vw;
   }
-  .parallax-content .info-pijamadas pre, .parallax-content .info-can pre, .parallax-content .info-pet pre {
-    width: 97%;
-    font-size: 4.4rem;
+  .parallax-content .info-pijamadas .parrafo, .parallax-content .info-can .parrafo, .parallax-content .info-pet .parrafo {
+    width: 90%;
+    font-size: 6rem;
     font-weight: bold;
   }
-  .parallax-content .sexta, .parallax-content .septima, .parallax-content .octava,
-  .parallax-content .novena, .parallax-content .decima, .parallax-content .decima1,
+  .parallax-content .octava, .parallax-content .novena, .parallax-content .decima, .parallax-content .decima1,
   .parallax-content .decima2, .parallax-content .decima3, .parallax-content .decima4 {
     display: none;
   }
   .parallax-content .info-entrega {
-    font-size: 4.5rem;
+    font-size: 6rem;
     font-weight: bold;
+  }
+  .parallax-content .titulo {
+    font-size: 9rem;
   }
 }
 /*# sourceMappingURL=informacion.css.map */

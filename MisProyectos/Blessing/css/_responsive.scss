@@ -4,7 +4,6 @@
     }
 
     main {
-
         .logo {
             img {
                 padding: 2vh 1vw;
@@ -17,24 +16,33 @@
 
             .principal {
                 padding-top: 3vh;
-                height: 75%;
-                
-            }
-            
+                height: 75%;                
+            }            
         }
 
         #nosotros {
             margin: 0vh auto;
-            height: 35vh;
+            height: 100%;            
 
             .nosotros {
+                .frase {
+                    h2 {
+                        font-size: 4.5rem;
+                        span {
+                            font-size:5.5rem
+                        }
+                    }
+                }
 
                 .vision {
-                    padding: 2.7vw 2.7vw 0vw 2.7vw;
+                    padding: 0vw 2.7vw 0vh 2.7vw;
+                    p {
+                        font-size: 3.5rem;                     
+                    }
 
                     .boton-galeria {
                         a {
-                            padding: 5vh 3.5vw 0vh;
+                            padding: 0vh 3.5vw 10vh;
                         }
                     }
                 }
@@ -42,8 +50,7 @@
         }
 
         #productos {
-            margin: 0vh auto;
-            
+            margin: 0vh auto;            
 
             .productos {
                 padding-bottom: 0vh;
@@ -54,12 +61,10 @@
             margin: 0vh auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-                        
+            justify-content: center;                        
 
             .experiencia {
                 height: 50vh;
-
                 
                 video {
                     height:45vh;
@@ -76,11 +81,11 @@
                 margin: 5vh auto;
 
                 h4 {
-                    font-size: 7rem;
+                    font-size: 6rem;
                 }
 
                 a {
-                    font-size: 5rem;
+                    font-size: 4rem;
                     padding: 3vh 2vw 0vh;
                 }
             }
@@ -98,7 +103,6 @@
         font-weight: bold;
         justify-content: space-between;
         
-
         .horarios {
             span {
                 display: none;
@@ -111,11 +115,9 @@
     }
     
     main {
-
         section .logo {
-
-            width: 30vw;
             margin: 0vh auto;
+            width: 30vw;
 
             img {
                 width: 30vw;
@@ -123,22 +125,19 @@
         }
 
         nav {
-
             ul {
-                font-size: 4.5rem;
+                font-size: 4rem;
                 font-weight: bold;
-            }
-            
+            }            
         }
        
         .marca {
-            width: 95vw;
             height: 60%;
             margin: 0vh auto;
+            width: 95vw;
 
             .principal {
-                width: 90vw;
-                
+                width: 90vw;                
 
                 video {
                     width: 100%;
@@ -158,19 +157,16 @@
         #nosotros {
             width: 95vw;
             margin-bottom: 5vh;
-            margin-top: 5vh;
-           
+            margin-top: 5vh;           
 
             .nosotros {
 
                 flex-direction:column;
                 
-
                 .frase {
-                    width: 100%;
-                    text-align: center;
                     justify-content: flex-start;
-                    
+                    text-align: center;
+                    width: 100%;                    
 
                     h2 {
                         text-align: left;
@@ -190,14 +186,13 @@
                     }                               
 
                     .boton-galeria {
+                        font-size: 4rem;
                         margin-top: 2vh;
                         margin-bottom: 2vh;
                         width: 25vw;
-                        font-size: 4rem;
                     }
                 }
-            }            
-                
+            }                       
         }
 
         #productos {
@@ -205,9 +200,9 @@
             width: 95vw;
             
             .productos {
+                align-items: center;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
                 width: 100%;
 
                 h3 {
@@ -242,22 +237,18 @@
             margin-top: 0vh;
             padding-top: 5vh;
             padding-bottom: 5vh;
-            width: 100vw;
-            
+            width: 100vw;            
 
             .experiencia {
                 video {
-                    height: 100%;
-                    
+                    height: 100%;                    
                 }
             }
         }
 
         #contactanos {
             width: 95vw;
-        }
-
-       
+        }       
     }
 
     footer {
