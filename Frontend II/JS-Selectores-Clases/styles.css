@@ -55,18 +55,17 @@ poder resolver el ejercicio */
   background-color: rgb(39, 39, 39);
 }
 
-.h1modoOscuro { 
+.bodyModoOscuro h1 { 
   background-color: rgb(19, 19, 19);
   color: rgb(170, 170, 170);
   border-color: black;
 }
 
-
-.itemModoOscuro {
+.bodyModoOscuro .item {
   background-color: rgb(19, 19, 19);
   border-color: black;
 }
 
-.textoModoOscuro {
+.bodyModoOscuro h2, .bodyModoOscuro p {
   color: rgb(230, 230, 230);
 }
