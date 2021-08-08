@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primario: #3C2313;
+    --colorSecundario: #F0A83E;
+    --colorTercero: #E5E5E5;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.header-top {
+    align-items: center;
+    background-color: #222222;
+    color: #F3F3F3;
+    display: flex;
+    height: 20px;
+    justify-content:space-between;
+    width: 100vw;
+}   
+
+.header-top h3 {
+    font-size: 1rem;
+    margin: 1% 1.2%;
+}
+
+.header-top ul {
+    display: flex;
+    width: 10%;
+}
+
+.header-top ul li {
+    font-size: 1rem;
+    padding: 0% 3%;
+}
+
+
+.flechaMenu {
+    margin: 0% 0.03%;
+}
+
+.header-bottom {
+    height: 62px;
+    background-color: var(--colorSecundario);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.LogoMarca {
+    display: flex;
+    padding: 1%;
+}
+
+.gatito, .perrito {
+    width: 2.5rem;
+    margin: 1.3%;
+}
+
+h1 {
+    color: var(--primario);    
+}
+
+h1 span {
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;    
+    width: 50vw;
+}
+
+nav ul li {
+    
+    font-size: 1.4rem;
+    margin: 2%;
+    flex-grow: 1;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.kangrebur {
+    display: none;
+}
+
+.huella {
+    padding-right: 3%;
+}
+
+.login {
+    margin: 0% 1.1%;
+    width: 5%;
+}
+
+.login a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 4%;
+}
+
+.form-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4% auto;  
+    
+}
+
+form {
+    width: 30vw;
+}
+
+h2.contactanos {
+    font-size: 2.5rem;
+    color: var(--primario);
+    margin-bottom: 1.2%;
+}
+
+.input {
+    background-color: var(--primario);
+    width: 100%;
+    padding: 3% 3%;
+    border-radius: 15px;
+    margin: 1.2%;
+    color: white;
+}
+
+.input::placeholder {
+    color: #ffffff;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin: 8%;    
+}
+
+#resetear {
+    background-color: #8A8787;
+    color:black;
+    font-size: 1.3rem;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 2% 10%;
+    text-align: center;
+    margin: 0% 1%;
+    border-color: white;   
+    transition: all 0.4s; 
+}
+
+#resetear:hover {
+    transform: scale(1.2);
+}
+
+#enviar {
+    background-color: #F0A83E;
+    color:black;
+    font-size: 1.3rem;
+    font-weight: 900;
+    border-radius: 15px;
+    padding: 2% 10%;
+    text-align: center; 
+    margin: 0% 1%;
+    border-color: white; 
+    transition: all 0.4s;   
+}
+
+#enviar:hover {
+    transform: scale(1.2);
+}
+
+.footer-top {
+    
+    background-color: var(--primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DatosContacto {
+    margin: 0% 3%;
+}
+
+
+
+.footer-bottom {
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+
+.DatosContacto {
+    width: 33vw;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    margin: 7% 0px;
+}
+
+.contacto img {
+    width: 14%;
+    transition: all 0.4s;
+}
+
+.contacto img:hover {
+    transform: scale(1.4);
+}
+
+.contacto div h3 {
+    color: var(--colorTercero);
+    font-size: 2rem;
+    
+}
+
+.contacto div h4 {
+    color: var(--colorTercero);
+    font-size: 1rem;
+    font-weight:300;
+}
+
+.texto-contacto {   
+    margin: 0% 13%;
+}
+
+.Nosotros {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-start;
+}
+
+
+.LogoMarcaFooter h6{
+    display:flex;
+    color:white;
+    font-size: 3rem;  
+    letter-spacing: 0.1rem;  
+
+}
+
+.LogoMarcaFooter h6 span {
+    color: var(--colorSecundario);
+}
+
+h6 .gatito {
+    width: 5rem;
+    margin-right: 2%;
+}
+
+h6 .perrito {
+    width: 3.6rem;
+    height: 2.7rem;
+    margin-left: 2%;
+}
+
+.redes {
+    margin-right: 8%;
+}
+
+.redes ul {
+    display: flex;     
+    gap: 8%;
+    
+}
+
+.redes ul li a img{
+    padding-top: 30%;
+    transition: all 0.4s;
+    width: 3rem;
+}
+
+.redes ul li a img:hover{
+    transform: scale(1.4);
+}
+
+
+@media screen and (max-width:480px){
+
+    html {
+        font-size: 5px;
+    }
+    
+    nav, .login {
+        display: none;
+    }
+
+    .header-top h3 {
+        margin: 1% 7%;
+    }
+
+    .LogoMarca {
+        padding: 0% 7%;
+        font-size: 1.5rem;
+    }
+   
+    .kangrebur {
+        display: inline-block;
+        color: var(--colorTercero);
+        font-size: 3rem;
+        margin-right: 3%;
+    }
+
+    .header-top ul {
+        width: 15%;
+    }
+
+    .form-box {
+      margin: 9% auto;  
+        
+    }
+    
+    form {
+        width: 75vw;
+    }
+
+    h2.contactanos {
+        font-size: 3rem;
+        color: var(--primario);
+        margin-bottom: 1.3%;
+    }
+
+    #resetear, #enviar {        
+        font-size: 3rem;        
+        padding: 3% 15%;        
+    }
+    
+    .DatosContacto {
+        width: 58vw;
+        
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contacto div h3 {
+        font-size: 3rem;        
+    }
+
+    .Nosotros {
+        align-items: center;
+        align-self: center;
+    }
+
+    .redes ul li a img{
+        width: 4.5rem;
+    }
+
+    .input {
+        font-size: 1.5rem;
+    }
+
+  
+
+}

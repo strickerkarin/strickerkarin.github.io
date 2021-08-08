@@ -1,0 +1,13 @@
+body {
+    background-image: url(../img/fondoFront2.jpg);
+        
+}
+
+a, h2, h1 {
+    color: black !important;
+}
+
+h1 {
+    padding-bottom: 5%;
+}
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/lista-tareas.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <script src="./scripts/services/request-manager.servicio.js"></script>
+    <script src="./scripts/lista-tareas.script.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <title>ToDo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">My ToDo's</a>
+        </nav>
+
+        <div class="user-info">
+            <p>username</p>
+            <div class="user-image"></div>
+        </div>
+    </header>
+
+    <div id="iconos-fondo">
+        <div class="icono-fondo none" onclick='removerFondos()'>NONE</div>
+        <div class="icono-fondo uno" onclick='colocarFondo("fondo-uno")'></div>
+        <div class="icono-fondo dos" onclick='colocarFondo("fondo-dos")'></div>
+        <div class="icono-fondo tres" onclick='colocarFondo("fondo-tres")'></div>
+        <div class="icono-fondo cuatro" onclick='colocarFondo("fondo-cuatro")'></div>
+        <div class="icono-fondo cinco" onclick='colocarFondo("fondo-cinco")'></div>
+        <div class="icono-fondo seis" onclick='colocarFondo("fondo-seis")'></div>
+    </div>
+
+    <form id="agregarTarea" class="nueva-tarea">
+        <div class="not-done "></div>
+        <input type="text" name="descripcionNuevaTarea" placeholder="Nueva tarea">
+        <button>
+      <img src="./assets/plus.png" alt="Agregar Tarea">
+    </button>
+    </form>
+
+
+    <ul class="tareas-pendientes">
+        <li class="tarea loading">
+            <div class="not-done"></div>
+            <div class="descripcion">
+                <p class="nombre"></p>
+                <p class="timestamp"></p>
+            </div>
+        </li>
+        <li class="tarea loading" style="opacity: .3;">
+            <div class="not-done"></div>
+            <div class="descripcion">
+                <p class="nombre"></p>
+                <p class="timestamp"></p>
+            </div>
+        </li>
+    </ul>
+
+    <h2 class="titulo-terminadas">Tareas terminadas</h2>
+    <ul class="tareas-terminadas"></ul>
+
+</body>
+
+</html>

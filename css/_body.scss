@@ -30,7 +30,7 @@ body, html {
     right: 0;
     bottom: 0vh;
     left: 0;
-    transform: translateZ(-1px) scale(2.4);
+    transform: translateZ(-1px) scale(2.5);
     background-size: 100%;
     z-index: -1;
 }
@@ -46,7 +46,7 @@ body, html {
 }
 .bg {
     color: black;
-    top: 100vh;
+    top: 230vh;
     background: white;
     height: 15vh;
     padding: 50vh 0vw;
@@ -93,7 +93,8 @@ header {
                 
                 &:hover {
                     font-weight: bold;
-                    text-shadow: 2px 2px 20px white;                
+                    text-shadow: 2px 2px 20px white;
+                    cursor: pointer;                
                 }
                 
 

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+    --primary: #7898FF;
+    --secondary: #8E64C5;
+    --app-grey: #F2F2F2;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+background: linear-gradient(110deg, var(--primary), var(--secondary));
+height: 100vh;
+}
+
+h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btnContainer{
+  padding: 20px 0;
+  text-align: center;
+}
+.btnContainer button{
+  padding: 5px 15px;
+}
+
+.tarjeta{
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  /* height: 200px; */
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeta * {
+  margin: 5px;
+  padding-left: 5px;
+}
+
+.renglon {
+  display: flex;
+  justify-content: end;
+}
+
+.mostrador {
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: #F2F2F2;
+  width: 220px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+img {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
